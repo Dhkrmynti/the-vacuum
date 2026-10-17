@@ -1,308 +1,289 @@
 ---
-name: VOID
-description: Deadsky Observatory's night shift on dEaD-1. Control-room night, strip-chart paper, a pen trace, a red marker, and the ring.
+name: The Vacuum
+description: A cobalt brick-sorting tray seen from above, worked by Vac, a robot vacuum with one amber eye.
 colors:
-  night: "#06080f"
-  panel: "#10172a"
-  panel-line: "#26324d"
-  star: "#d3dbec"
-  star-dim: "#919db8"
-  paper: "#f1ede1"
-  paper-face: "#f8f4ea"
-  grid: "#e0703f"
-  pen: "#1c2a6b"
-  pen-soft: "#4a5577"
-  marker: "#cf3228"
-  ring: "#ffad42"
-  ring-hot: "#ffe2a6"
-  fuel: "#5cc2ab"
-  fuel-ink: "#1d7262"
+  well-floor: "#1b3fb4"
+  well-deep: "#16359c"
+  tray-lip: "#2552d8"
+  lip-edge: "#4470ea"
+  star: "#f4f6ff"
+  star-dim: "#cdd6f7"
+  label-paper: "#f6f7fb"
+  label-shade: "#e3e7f3"
+  label-rule: "#c9d1ea"
+  pen: "#121a3a"
+  pen-soft: "#4b5478"
+  marker-red: "#d81e28"
+  marker-deep: "#9c0f17"
+  brick-yellow: "#ffc21a"
+  brick-yellow-hot: "#ffe27a"
+  brick-yellow-edge: "#c98a00"
+  piggy-pink: "#ff9cc4"
+  piggy-ink: "#a8255c"
+  vac-charcoal: "#262a33"
+  vac-lid: "#353a46"
+  vac-eye: "#ffb020"
+  brick-red: "#e3262f"
+  brick-green: "#1f9d55"
+  brick-white: "#eef0f6"
+  brick-black: "#2a2d36"
+  brick-orange: "#ff7a1a"
 typography:
-  display-hero:
-    fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif"
-    fontSize: "30svh"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "-0.01em"
   display:
-    fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif"
-    fontSize: "clamp(3rem, 6.4vw, 5.8rem)"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "-0.01em"
+    fontFamily: "Bricolage Grotesque Variable, Arial Narrow, sans-serif"
+    fontSize: "clamp(4.2rem, 10vw, 7.6rem)"
+    fontWeight: 800
+    lineHeight: 0.82
+    letterSpacing: "-0.03em"
+    fontVariation: "\"wdth\" 75"
   headline:
-    fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.2rem, 3.6vw, 3.2rem)"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "-0.01em"
+    fontFamily: "Bricolage Grotesque Variable, Arial Narrow, sans-serif"
+    fontSize: "clamp(2.6rem, 5.4vw, 4.8rem)"
+    fontWeight: 800
+    lineHeight: 0.9
+    letterSpacing: "-0.02em"
+    fontVariation: "\"wdth\" 75"
   title:
-    fontFamily: "Big Shoulders Display, Arial Narrow, sans-serif"
-    fontSize: "1.55rem"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "-0.01em"
+    fontFamily: "Bricolage Grotesque Variable, Arial Narrow, sans-serif"
+    fontSize: "clamp(1.7rem, 2.6vw, 2.4rem)"
+    fontWeight: 800
+    lineHeight: 0.9
+    letterSpacing: "-0.02em"
+    fontVariation: "\"wdth\" 75"
   body:
-    fontFamily: "Hanken Grotesk, system-ui, sans-serif"
-    fontSize: "1.05rem"
+    fontFamily: "Figtree Variable, system-ui, sans-serif"
+    fontSize: "1.08rem"
     fontWeight: 400
     lineHeight: 1.625
   label:
-    fontFamily: "Hanken Grotesk, system-ui, sans-serif"
-    fontSize: "0.72rem"
-    fontWeight: 600
-    letterSpacing: "0.12em"
-  reading:
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontFamily: "Figtree Variable, system-ui, sans-serif"
     fontSize: "0.85rem"
+    fontWeight: 700
+    letterSpacing: "0.01em"
+  number:
+    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontSize: "0.9rem"
     fontWeight: 400
     fontFeature: "\"tnum\", \"lnum\""
-  hand:
-    fontFamily: "Reenie Beanie, Bradley Hand, cursive"
-    fontSize: "1.9rem"
-    fontWeight: 400
-    lineHeight: 1
-    letterSpacing: "0.01em"
 rounded:
-  strip: "4px"
-  schematic: "6px"
-  module: "8px"
-  bar: "10px"
-  pill: "999px"
+  pip: "4px"
+  chip: "8px"
+  brick: "10px"
+  field: "12px"
+  label: "14px"
+  cell: "18px"
+  well: "28px"
 spacing:
-  gutter-phone: "16px"
-  gutter-tablet: "40px"
-  gutter-desktop: "64px"
-  section-top: "112px"
-  section-bottom: "96px"
-  slip-x: "32px"
-  slip-y: "20px"
+  lip: "8px"
+  lip-wide: "12px"
+  inset-sm: "16px"
+  inset-md: "32px"
+  inset-lg: "48px"
+  section-top: "64px"
+  section-top-lg: "96px"
 components:
-  button-ring:
-    backgroundColor: "{colors.ring}"
-    textColor: "{colors.night}"
-    rounded: "{rounded.pill}"
-    padding: "14px 32px"
-  button-ring-hover:
-    backgroundColor: "{colors.ring-hot}"
-    textColor: "{colors.night}"
+  button-brick-yellow:
+    backgroundColor: "{colors.brick-yellow}"
+    textColor: "{colors.pen}"
+    rounded: "{rounded.brick}"
+    padding: "14px 24px"
+  button-brick-yellow-hover:
+    backgroundColor: "{colors.brick-yellow-hot}"
+  button-brick-white:
+    backgroundColor: "{colors.label-paper}"
+    textColor: "{colors.pen}"
+    rounded: "{rounded.brick}"
+    padding: "12px 20px"
+  button-brick-dark:
+    backgroundColor: "{colors.brick-black}"
+    textColor: "{colors.label-paper}"
+    rounded: "{rounded.brick}"
+    padding: "12px 16px"
   button-ghost:
     textColor: "{colors.star}"
-    rounded: "{rounded.pill}"
-    padding: "10px 20px"
-  button-ghost-hover:
-    textColor: "{colors.ring-hot}"
+    rounded: "{rounded.brick}"
   button-pen:
     textColor: "{colors.pen}"
-    rounded: "{rounded.pill}"
-    padding: "10px 20px"
+    rounded: "{rounded.brick}"
   button-pen-hover:
     backgroundColor: "{colors.pen}"
-    textColor: "{colors.paper}"
-  paper-slip:
-    backgroundColor: "{colors.paper}"
+    textColor: "{colors.label-paper}"
+  well:
+    backgroundColor: "{colors.well-floor}"
+    textColor: "{colors.star}"
+    rounded: "{rounded.well}"
+  cell:
+    backgroundColor: "{colors.well-deep}"
+    textColor: "{colors.star}"
+    rounded: "{rounded.cell}"
+    padding: "24px"
+  parts-label:
+    backgroundColor: "{colors.label-paper}"
     textColor: "{colors.pen}"
-    padding: "20px 32px"
+    rounded: "{rounded.label}"
+    padding: "32px 36px"
   ca-field:
-    backgroundColor: "{colors.panel}"
-    textColor: "{colors.star}"
-    rounded: "{rounded.pill}"
-    padding: "8px 8px 8px 20px"
-  icon-button:
-    textColor: "{colors.star-dim}"
-    rounded: "{rounded.pill}"
-    size: "40px"
-  status-bar:
-    backgroundColor: "{colors.panel}"
-    textColor: "{colors.star}"
-    rounded: "{rounded.bar}"
-    padding: "16px 20px"
-  log-tag-burn:
-    backgroundColor: "{colors.ring}"
-    textColor: "{colors.night}"
-    rounded: "{rounded.pill}"
-    padding: "2px 10px"
-  log-tag-buyback:
-    backgroundColor: "{colors.pen}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
-    padding: "2px 10px"
+    backgroundColor: "{colors.label-shade}"
+    textColor: "{colors.pen}"
+    rounded: "{rounded.field}"
+    padding: "8px 8px 8px 16px"
+  run-tag:
+    backgroundColor: "{colors.label-paper}"
+    textColor: "{colors.pen}"
+    typography: "{typography.label}"
+    rounded: "{rounded.label}"
+    padding: "6px 12px"
 ---
 
-# Design System: VOID
+# Design System: The Vacuum
 
 ## Overview
 
-**Creative North Star: "The Night Shift on dEaD-1"**
+**Creative North Star: "The Sorting Tray"**
 
-The whole system is a radio observatory's control room at night, watching one black hole. Two materials carry everything: the blue-black night of the room and the sky, and pale strip-chart paper ruled in recorder orange that the instruments print onto. Readings are set in a condensed instrument face and in mono; the observer's notes are scrawled over the paper in a red marker hand. The only warm light in the room is the hole's amber photon ring, and it glows brighter as the accretion disk fills.
+The page is a cobalt plastic brick-sorting tray seen from directly above. Every section is a molded well pressed into the tray, and the bright tray lip shows between wells as a thin ridge. Studded bricks in primary red, yellow, green, white and black lie scattered on the well floors, drawn top-down as exact geometry. Copy that matters never sits loose on the plastic: it goes on white parts-label stickers, slightly tilted, pressed on by hand. Vac, a charcoal disc with one amber eye, is the only character, and it works the tray: it sweeps the hero, runs the pinned sequence, and in the finale pulls every brick into the bin.
 
-Density is split on purpose. Data sits in tight bands on paper slips and the observing-log strip; around them the night sky is left empty. Paper slips are physical objects: they sit slightly rotated (between -2deg and 1.5deg), carry sprocket holes down both edges, and throw a deep soft shadow onto the night. Motion follows instrument physics: needles swing ballistically, the recorder pen draws as you scroll, digits re-ink when a live value changes. Every motion has a still, complete reduced-motion fallback.
+The world is toy-sized, deadpan and a little menacing. Material is literal: wells have a dark crease at the top edge and inner shade falling down the wall; bricks have a darker underside edge and round studs; stickers cast a soft drop shadow onto the plastic. Density is low, one idea per well, with big heavy condensed display type, plain sans body, and mono for every number and address.
 
-This world rejects the generic dark crypto hero (counter, CA box, stat cards) and the generic space-neon template. The black hole is drawn live on canvas, never shown as a stock nebula or glow blob.
+The world rejects the dark crypto hero with counter, CA box and stat cards, and it rejects a literal living-room cartoon. The bricks are generic studded bricks, never a branded toy's name, logo, minifigure or trade dress.
 
 **Key Characteristics:**
-- Blue-black night field with pale, orange-ruled strip-chart paper as the only light surface.
-- Four voices: condensed uppercase display, plain grotesk text, tabular mono readings, red marker hand.
-- Amber ring light means live or actionable; red marker means the observer's annotation; teal means observatory fuel.
-- Paper slips sit slightly rotated, with sprocket holes and a deep drop shadow.
-- Scroll-driven instrument motion (pinned orbit, recorder trace, ballistic needle), always gated by prefers-reduced-motion.
+- Cobalt molded plastic as the only ground: wells on a lit lip, no flat page background.
+- Primary-color studded bricks drawn top-down; the yellow brick is the action and the live reading.
+- White parts-label stickers carry the copy that must be read, tilted a degree or two.
+- Vac (charcoal, one amber eye) is the sole character and the motion engine.
+- Piggy-bank pink appears only for keep runs.
+- Heavy condensed grotesque display, plain sans body, mono numerals.
 
 ## Colors
 
-A night-dominant palette: one cool dark family, one warm paper family, and three signal inks used sparingly, each with a single meaning.
+Saturated cobalt plastic carrying primary-color bricks, white stickers and one pink exception.
 
 ### Primary
-- **Photon Ring Amber** (ring): the hole's light. Reserved for live state and the primary action: the BUY $VOID button, the live fallen total (in Ring Hot), the status lamp when the Watcher is live, the odd-orbit "falls in" reading on night surfaces, the orbit progress bar, and interactive response (hover borders, focus outline, text selection, caret). The sky's central glow mixes it in at 3% to 10% by the `--hearth` disk-fill value, so the room literally warms as the disk approaches critical mass.
-- **Ring Hot** (ring-hot): the hottest part of the ring. Hover state of the primary action, ghost-button hover text, and the live fallen numerals inside the shadow.
+- **Yellow Brick** (brick-yellow): the primary action (every buy button), live readings on the plastic (run counts, the ticker beside amounts, the active run pip, the dock status while running), focus rings, text selection, the scrollbar thumb. Its hot tint (brick-yellow-hot) is hover only; its shaded edge (brick-yellow-edge) is the brick's underside.
 
 ### Secondary
-- **Observer's Marker Red** (marker): the observer's hand. All handwritten annotations (notes on slips, log-row remarks, the Void's quotes, the drawn arrows of the orbit notes), the accretion meter's past-critical arc and ticks (85% to 100%), the "falls in" reading on paper, and hover/close states on paper controls.
+- **Marker Red** (marker-red): the live burned total on the hero label, the "on a run" state on the status label, and counters inside white bricks. Red writes on paper, not on plastic. Marker Deep is its pressed shade.
 
 ### Tertiary
-- **Observatory Fuel Teal** (fuel): the keep orbit. Even-orbit readings on night, the "Observatory fuel" heading and fuel-orbit labels, the fuel branch of the Watcher schematic.
-- **Fuel Ink** (fuel-ink): fuel teal dark enough to read on paper (the meter's "fuel" next-orbit reading, the schematic's fuel wire and module).
+- **Piggy-Bank Pink** (piggy-pink): keep runs and nothing else: the piggy bank, its heading, its tx links, the "next run: the piggy bank" reading. Piggy Ink is its dark form for text on light ground.
 
 ### Neutral
-- **Control-Room Night** (night): page background, the sky base, button text on amber, the meter's needle and pivot, the code pane in the schematic modal.
-- **Console Panel** (panel): raised night surfaces: the CA field (at 80%), the Watcher status bar.
-- **Panel Line** (panel-line): every hairline on night: ghost-button and icon-button borders, list dividers, footer rule, scrollbar thumb, inactive progress segments.
-- **Starlight** (star): primary text on night, display headings, ghost-button text.
-- **Dim Starlight** (star-dim): secondary text on night: paragraphs, nav labels, captions.
-- **Chart Paper** (paper): the strip-chart paper; background of every slip, the log strip, the drawer, the schematic, and paper chips (copy button, header CA chip).
-- **Paper Face** (paper-face): the brighter instrument face printed on paper (meter dial face, schematic module fill, the drawer search field). Used as a literal hex in three components, not a theme token.
-- **Recorder Grid Orange** (grid): only ever the paper's ruling, mixed to 42% for the major 40px grid and 16% for the minor 8px grid. Never text, never fill.
-- **Pen Blue-Black** (pen): all text and strokes on paper: the recorder trace, slip titles, readings, schematic lines, pen buttons.
-- **Soft Pen** (pen-soft): secondary text on paper: labels, timestamps, units.
-
-The theme also declares `night-2`, `paper-shade` and `marker-deep`; no shipped surface uses them, so they are held in reserve and not recorded as system tokens.
-
-### Legacy aliases (operator panel only)
-The theme still declares `soot`, `char`, `wood`, `bark`, `ember`, `flame`, `hot`, `ash`, `ash-light`, `plaque`, `plaque-ink`, `cold` and `--font-sign`, plus the helper classes `.plaque`, `.btn-coal` and `.sign-lettering`. They exist only so the hidden `/memex` operator panel keeps rendering; each is a remap onto a VOID token (for example `ember` and `flame` resolve to ring, `plaque` to paper, `cold` to fuel). They are not part of the public system. Never use them on public surfaces.
+- **Well Floor Cobalt** (well-floor): the floor of every section well.
+- **Deep Well Cobalt** (well-deep): sub-compartments (cells), the finale well, the scrollbar track.
+- **Tray Lip Cobalt** (tray-lip): the page ground, the ridges between wells, the scrolled nav.
+- **Lit Lip Edge** (lip-edge): the light catching the lip's edge.
+- **Star White** (star) and **Star Dim** (star-dim): primary and secondary text on plastic.
+- **Label Paper** (label-paper), **Label Shade** (label-shade), **Label Rule** (label-rule): the sticker, a field pressed into it, and its dashed rules.
+- **Pen** (pen) and **Pen Soft** (pen-soft): text on stickers and white bricks.
+- **Vac Charcoal**, **Vac Lid**, **Vac Eye**: reserved for Vac and its dock. The amber eye is Vac's alone.
+- **Brick colors** (brick-red, brick-green, brick-white, brick-black, brick-orange, plus brick-yellow): scattered parts only. Each brick has a face, a darker shaded edge and a light stud highlight.
 
 ### Named Rules
-**The Photon Ring Rule.** Amber is the hole's light: live readings, the primary action, and interactive response. It is never body copy, never a static fill on paper, never decoration.
+**The Pink Is Only For Keeps Rule.** Piggy-bank pink marks keep runs and nothing else. It never decorates, never marks a bin run, never becomes a second accent.
 
-**The Three Inks Rule.** Each signal ink has one meaning: amber is live, red is the observer's hand, teal is fuel. A burn reads amber on night and marker red on paper (amber does not hold on cream); fuel reads fuel on night and fuel-ink on paper.
+**The Yellow Is The Brick You Press Rule.** Yellow on plastic means either "press this" or "this is live". A static decoration is never yellow.
 
-**The Ruling Is Not Ink Rule.** Recorder orange exists only as the paper's grid. It is the measuring surface, not an accent.
+**The Red Writes On Paper Rule.** Marker red is for numbers and states written on white labels and bricks; on cobalt plastic, live values are yellow.
 
 ## Typography
 
-**Display Font:** Big Shoulders Display (with Arial Narrow, sans-serif)
-**Body Font:** Hanken Grotesk (with system-ui, sans-serif)
-**Label/Mono Font:** JetBrains Mono (with ui-monospace, monospace) for readings
-**Hand Font:** Reenie Beanie (with Bradley Hand, cursive) for the observer's notes
+**Display Font:** Bricolage Grotesque Variable at weight 800 and 75% width (with Arial Narrow)
+**Body Font:** Figtree Variable (with system-ui)
+**Label/Mono Font:** Figtree Variable 700 for labels; JetBrains Mono for numbers, addresses, hashes and times
 
-**Character:** A condensed instrument face stamped in heavy uppercase does the shouting; a plain grotesk does the explaining; mono prints the numbers as a recorder would; and a loose marker hand talks back over all of it. All four are self-hosted variable or single-weight woff2 files.
+**Character:** Box lettering: the condensed heavy grotesque reads like the print on a toy carton, set tight and stacked. Figtree is plain and friendly underneath it, and mono keeps every figure honest.
 
 ### Hierarchy
-- **Display Hero** (900, 30svh on desktop, clamp(5.5rem, 30vw, 9rem) on phones, 0.86): the VOID name only, split as V and ID around the hole on desktop, stacked above it on phones.
-- **Display** (900, clamp(3rem, 6.4vw, 5.8rem), 0.86, uppercase, -0.01em): section headings ("The observing log", "How an address became a black hole"). The finale heading runs larger, clamp(3.6rem, 10vw, 6rem).
-- **Headline** (900, clamp(2.2rem, 3.6vw, 3.2rem)): the tagline under the hole, Observatory fuel heading, card titles at clamp(2rem, 2.8vw, 2.5rem), orbit step names at clamp(2rem, 3.2vw, 2.8rem).
-- **Title** (900, 1.55rem): slip titles on paper ("Observer notes", "Accretion disk"); fall numbers at 1.15rem; button text uses the display face at 800, 0.04em to 0.05em tracking.
-- **Live numerals** (display face, 900, sized in container units to fill the shadow, tabular): the fallen total inside the hole, auto-sized from its digit count; log amounts at clamp(1.8rem, 3vw, 2.4rem).
-- **Body** (400, 1.02rem to 1.15rem, leading-relaxed 1.625): explanatory paragraphs, held to 44ch to 54ch.
-- **Label** (600, 0.62rem to 0.75rem, 0.12em, uppercase): field and reading labels, nav links, the tokenomics line.
-- **Reading** (JetBrains Mono 400, 0.78rem to 1rem, tabular lining numerals): addresses, ETH amounts, timestamps, tx hashes, the recorder's header print.
-- **Hand** (Reenie Beanie 400, 1.5rem to 2rem, line-height 1, marker red): annotations, the Void's quotes, log remarks (rotated -2deg on log rows).
+- **Display** (800, condensed, clamp 4.2-7.6rem, 0.82 leading): the wordmark on the hero label and the finale line. Tightest leading in the system.
+- **Headline** (800, condensed, clamp 2.6-4.8rem, 0.9 leading): one per section well, on plastic in star white.
+- **Title** (800, condensed, clamp 1.7-2.4rem up to 3.4rem for story chapters, 0.9 leading): run stage names (in yellow), story chapter titles, the status label's state, the lead run's amount.
+- **Body** (400, ~1.08rem, relaxed leading): lore and explanation, held to 34-56ch.
+- **Label** (Figtree 700, 0.78-1.05rem, lowercase sentence fragments): field names, counters, the dock status, run tags.
+- **Number** (JetBrains Mono, tabular lining figures, 0.82-1rem): ETH amounts, addresses, tx hashes, timestamps, percentages. Big live totals use Display or Headline with tabular figures instead.
+- **Vac's voice** (Bricolage 600, ~1.05rem, 1.1 leading): Vac's one-line quips only.
 
 ### Named Rules
-**The Four Voices Rule.** Every string belongs to exactly one voice: display for names and headings, grotesk for explanation, mono for readings, hand for the observer. Never set a reading in the grotesk or an explanation in the hand.
+**The Box Lettering Rule.** Display type is always Bricolage 800 at 75% width with negative tracking; never set it at normal width or a lighter weight.
 
-**The Tabular Readings Rule.** Every live number uses tabular lining numerals so digits hold still while they change.
+**The Lowercase Labels Rule.** Labels and button copy are lowercase sentence fragments ("buy $VAC", "feed vac a brick", "open the full log"). No uppercase tracking, no eyebrow above a headline.
 
 ## Layout
 
-Containers run at 84rem (header, hero, orbit) and 80rem (log, watcher, discovery, footer), with gutters of 16px on phones, 40px from 640px, 64px from 1024px. Sections breathe on a 112px top / 96px bottom rhythm; display headings sit 48px to 64px above their content. Section heads use a two-column split on desktop: heading left, a 48ch to 50ch explanatory paragraph right-aligned and bottom-aligned.
+The page is a stack of full-width wells pressed into the tray lip. Each section sits in its own well, inset by a thin lip gutter (8px, 12px from sm up) on the sides and between wells; no page background shows beyond that ridge. Inside a well, horizontal inset steps 16px / 32px / 48px across phone, sm and lg; section wells open with 64px top padding (96px at lg) and set their headline top-left.
 
-The first viewport centres the hole at 54svh on desktop (min(92vw, 26rem) on phones), with the fallen total inside its shadow. Under it, a three-column grid (17rem / fluid / 17.5rem) puts the observer-notes slip left, the tagline, CA and BUY centre, and the accretion meter slip right. On phones the order collapses to: name, hole, tagline and actions, meter, notes, so BUY sits above the fold.
+Scroll is staged: the hero well fills the viewport under the fixed nav (100svh less the nav) and pins while Vac sweeps it; the run sequence pins in a viewport-high well; the story pans horizontally through chapter cells on lg; the finale is a tall scroll runway (about 280svh) with a sticky deep well. All pinned and scrubbed behavior is gated by reduced motion and falls back to a static stacked layout.
 
-Breakpoints: 640px, 768px and 1024px from Tailwind defaults; 900px is the orbit sequence's pin threshold; 700px halves the canvas particle count. On desktop a pen thread runs down the left margin from the hero to the log strip.
-
-**The Empty Sky Rule.** Dense data lives on paper; the night around it stays empty. Do not fill the sky between slips with stat tiles or decoration.
+Grids inside wells are sub-compartments: the bin log is a 1/2/4-column grid of cells with the lead run taking a 2x2 cell; hero and status split into two columns at lg (label left, Vac right) and stack on phone with the label first and the buy brick above the fold.
 
 ## Elevation & Depth
 
-Depth is physical, not tonal: paper floats over the night, and the hole emits light. Night surfaces are flat and separated by hairlines (panel-line). Paper always casts one deep, soft shadow. Amber elements glow rather than cast.
+Depth is physical and runs in two directions: things pressed into the tray (wells, cells, fields) are shaded inset, and things lying on it (stickers, bricks, Vac) cast soft drop shadows onto the plastic. All shadow color is a deep navy (rgba(6,18,72,...)), never black or grey.
 
 ### Shadow Vocabulary
-- **Paper drop** (`box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.85)`): every paper surface, built into the paper material.
-- **Ring glow** (`box-shadow: 0 12px 30px -10px rgba(255, 173, 66, 0.75)`, hover `0 18px 40px -12px rgba(255, 173, 66, 0.9)`): the primary action only.
-- **Lamp glow** (`box-shadow: 0 0 10px 2px rgba(255, 173, 66, 0.6)`): the live status lamp and the margin thread's pen tip.
-- **Header settle** (`box-shadow: 0 12px 30px -18px rgba(0, 0, 0, 0.9)`): the fixed header once scrolled, with night at 90% and a backdrop blur.
-- **Photon ring** (`box-shadow: 0 0 0 2px rgba(255,226,166,0.9), 0 0 60px 12px rgba(255,173,66,0.45), 0 0 160px 40px rgba(255,173,66,0.18)`): the finale's swallowing circle only.
+- **Well wall** (`box-shadow: 0 -1px 0 rgba(6,18,72,.45), 0 1.5px 0 rgba(255,255,255,.28), inset 0 0 0 1px rgba(6,18,72,.35), inset 0 3px 0 rgba(6,18,72,.4), inset 0 22px 30px -8px rgba(6,18,72,.62), inset 0 -16px 26px -12px rgba(120,150,255,.16)`): every section well. Dark crease at the top edge, wall shade falling inward, faint bounce off the far wall.
+- **Cell wall** (`box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 0 0 1px rgba(6,18,72,.4), inset 0 2px 0 rgba(6,18,72,.45), inset 0 14px 20px -6px rgba(6,18,72,.55), inset 0 -10px 18px -10px rgba(120,150,255,.14)`): sub-compartments inside a well.
+- **Sticker** (`box-shadow: 0 1px 0 rgba(255,255,255,.9) inset, 0 14px 30px -8px rgba(6,18,72,.55), 0 3px 6px rgba(6,18,72,.25)`): parts labels and run tags lying on the plastic.
+- **Brick underside** (`box-shadow: inset 0 -5px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,.55), 0 8px 16px -6px rgba(6,18,72,.6)`): the yellow brick button. White and dark bricks use a 4px underside in their own edge shade. This is the same shaded edge the top-down SVG bricks carry. Pressing collapses the underside to 2px and drops the brick 3px.
 
 ### Named Rules
-**The Paper Floats Rule.** Only paper casts a shadow. Night surfaces never do; they are divided by a 1px to 1.5px panel-line hairline.
+**The Pressed In Or Lying On Rule.** Every surface is either molded into the tray (inset shade) or resting on it (navy drop shadow). Nothing floats with a generic card shadow.
 
-**The Light Is Emitted Rule.** Amber never casts a dark shadow; it glows.
+**The Navy Shadow Rule.** Shadows are tinted rgba(6,18,72,...). Black shadows break the plastic.
 
 ## Shapes
 
-Two families. Controls are full pills (999px): every button, the CA field, icon buttons, chips, log tags, filter tabs, the search field. Paper and instrument surfaces are nearly square: the log strip at 4px, the schematic at 6px, modal and schematic modules at 8px, the status bar and meter dial at 10px. Slips themselves are square-cornered and cut by sprocket holes: 4px radius holes on a 24px pitch, 10px in from each edge, masked down both long sides. The hole, the mark and the finale circle are true circles. Annotation arrows are drawn hand strokes with round caps (2.5px).
+Soft molded corners scale with depth: wells 28px, cells 18px, stickers 14px, fields 12px, bricks 10px, chips 8px, pips 4px. Brick buttons wear a row of round studs along the top edge, the same studs the scattered SVG bricks show from above. Stickers and run tags are rotated a few degrees (-4deg to +3deg), never more. A gap left by an emptied brick is the dashed outline of that brick and its studs. Vac, the bin and the dock are circles; everything else is a rounded rectangle.
 
 ## Components
 
 ### Buttons
-Rounded, stamped and confident: condensed uppercase display at 800 weight on a pill.
-- **Shape:** full pill (999px), inline-flex with a 0.5rem to 0.55rem icon gap.
-- **Primary (Ring):** amber fill, night text, tracking 0.04em, ring glow. Hero size 14px by 32px at 1.25rem; finale 16px by 36px at 1.3rem; modal 8px by 20px at 0.95rem.
-- **Hover / Focus:** Ring lifts 2px, brightens to Ring Hot and deepens its glow over 0.3s on the expo-out curve; presses 1px down on active. Focus everywhere is a 2px ring outline at 3px offset.
-- **Ghost (night):** transparent, star text, 1.5px panel-line border; hover turns the border amber and the text Ring Hot. Secondary actions next to BUY (chart, full log, copy CA).
-- **Pen (paper):** transparent on paper, pen text, 1.5px pen border at 60%; hover fills pen with paper text. Every action that lives on paper.
-- **Icon button:** 40px circle, panel-line border, star-dim icon; hover turns border and icon amber.
+Bricks you press: studded, chunky, with a shaded underside.
+- **Shape:** gently rounded brick (10px) with a row of studs along the top edge.
+- **Primary (yellow brick):** brick-yellow face, pen text, Figtree 800, trailing arrow icon; 14px 24px in the hero, larger in the finale.
+- **Hover / Focus / Active:** hover lifts 2px and brightens to the hot yellow (studs follow); active drops 3px and the underside collapses; focus is a 3px yellow outline at 3px offset. Transitions run 0.14s on the expo-out curve.
+- **White brick:** label-paper face, pen text, 4px grey-blue underside, white studs. Secondary actions on plastic (copy, open the log, feed Vac, sound toggle).
+- **Dark brick:** brick-black face, paper text, near-black underside. Secondary actions on a white label (chart, log, copy CA in the finale).
+- **Ghost:** translucent white with a 2px inner ring; minor icon actions on plastic.
+- **Pen outline:** 2px pen ring that fills pen on hover; actions inside the drawer.
 
 ### Chips
-- **Paper chip:** a pill of chart paper on night carrying a mono or display label in pen (the copy chip inside the CA field, the header CA chip, which lifts 2px on hover).
-- **Log tags (drawer):** small pills in display 0.85rem: burn is amber on night text, buyback is pen with paper text, trigger and default are outlined in pen.
-- **Filter tabs:** display 0.95rem pills; selected is pen fill with paper text, unselected is pen-soft text darkening to pen.
+- **Run tag:** a small parts-label sticker ("run 4") tilted -4deg or +3deg, stamped onto its compartment with an overshoot when it scrolls into view.
+- **Reading chip:** a navy-tinted pressed pill (10px) holding a label and a mono value inside a run stage.
 
 ### Cards / Containers
-- **Paper slip:** chart paper with the orange ruling, sprocket holes, pen text, paper drop shadow, 20px by 32px padding, rotated -2deg to 1.5deg on desktop. Observer notes, the accretion meter and discovery entries are all slips; discovery entries step down 64px per column and alternate rotation.
-- **Status bar:** console panel, panel-line border, 10px radius, 16px by 20px padding.
-- **Background:** see Colors. **Shadow Strategy:** see Elevation. **Border:** none on paper; hairline on night.
+- **Well:** well-floor cobalt, 28px, well-wall shadow; one per section.
+- **Cell:** deep cobalt, 18px, cell-wall shadow, 20-24px padding; compartments for bin runs, story chapters and the run stage.
+- **Parts label:** label-paper sticker, 14px, sticker shadow, pen text, tilted about -1.2deg on the hero and +0.8deg on the status well. Copy that must be read and copied lives here.
 
 ### Inputs / Fields
-- **CA field:** a full-width pill (max 34rem) in panel at 80% with a panel-line border; label over mono address on the left, paper copy chip on the right. Hover turns the border amber. Before launch it is replaced by a dashed panel-line pill saying the address arrives at launch.
-- **Search (drawer):** a paper-face pill with a pen border at 30%, mono 0.82rem, a 14px search icon; focus darkens the border to full pen.
+- **CA field:** a label-shade pressed panel (12px) inside the sticker: a label line above a truncated mono address, and a pen-colored copy chip (8px) on the right that swaps to "copied" with a check. Before launch it is a dashed label-rule outline holding one plain sentence.
 
 ### Navigation
-Fixed header, 64px on phones and 72px from 640px, transparent at the top and settling to night at 90% with a blur and header shadow after 24px of scroll. Mark plus "Void" in display 1.9rem on the left (the mark rotates -30deg on hover over 0.7s); section links in label 0.74rem star-dim, turning amber on hover, hidden below 768px; icon buttons and the paper CA chip on the right (CA chip from 1024px).
+- Fixed top bar, transparent over the hero, gaining tray-lip cobalt with a navy shadow once the page scrolls. Vac mark (spins 200deg on hover) plus "The Vacuum" in display type; lowercase section links in Figtree 600 that turn yellow on hover; a white-brick sound toggle and a yellow buy brick on the right. Links hide below md; the nav buy brick hides below sm because the hero carries it.
 
-### Black Hole (signature)
-dEaD-1 drawn live on a 2D canvas with additive light: a lensed starfield, a tilted disk (tilt 0.24) with its lensed arc over the shadow, and a photon ring whose glow follows the disk fill. It speeds up while a feed is running and siphons particles off as a fuel jet on even orbits. It pauses when off screen and draws a still frame under reduced motion. The shadow can hold content (the fallen total) at a fixed fraction of the short side.
+### Vac
+A charcoal disc seen from above: bumper seam at the front, lighter lid, a pulsing amber eye bar, and a side brush that spins (fast while a run is on). The eye goes grey when the contract is unset (Vac asleep). The dock's charge ring shows escrow fill.
 
-### Accretion Meter (signature)
-A VU-style dial on a paper slip: a paper-face rounded dial, pen ticks across a 112deg sweep, marker red from 85% to CRIT, a night needle and pivot. The needle swings ballistically (`elastic.out(1.1, 0.35)`, 1.6s, 0.4s delay) to the disk-fill fraction. Below it, a reading list (label left, mono right) and the next orbit in display, with a marker-hand status line.
-
-### Observing Log (signature)
-The strip-chart recorder unspooled: a paper strip with sprockets, a mono header printed across the top, then 112px rows. One continuous pen trace (1.5px, pen) runs down the left; it holds a jittered noise floor and spikes at each fall, sized logarithmically by amount, and is drawn row by row with scroll. Each row: fall number and timestamp, the amount in display numerals, the tx in mono with an external-link icon, and a rotated marker remark.
-
-### Orbit Sequence (signature)
-Five steps (disk, critical mass, the pull, the feed, the fork). From 900px it pins for 400% of the viewport: the step text crossfades, the hole scales from 0.86 to 1.08, and each step's marker note with a hand-drawn arrow fades in beside the hole; a five-segment progress bar fills in amber. Below 900px or under reduced motion, a sticky hole follows whichever step is in view and the steps stack with 34svh gaps.
-
-### Live Number
-Counts up once with an expo-out ease when it enters view, then re-inks only the digits that change (0.7s fade-from-blur, 0.2em rise). The real value renders without JavaScript.
-
-### Finale
-On desktop the last section scrolls 220svh: a black circle with the photon-ring shadow scales from 0.18 to 9, swallowing the screen, and the closing heading and BUY are written into the dark. Without motion or below 1024px, the section is a plain centred close.
+### Bricks and gaps
+Top-down SVG bricks at 10 units per stud: navy cast shadow, shaded edge to the bottom-right, face, studs with a highlight arc. Rotations snap to 22.5deg steps, and the scatter is seeded so the floor is identical on every load. An emptied compartment shows the dashed outline of the brick that left.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** put every dense reading on chart paper (paper, pen text, 42%/16% orange ruling at 40px/8px) and leave the night around it empty.
-- **Do** reserve Photon Ring Amber (#ffad42) for live state, the primary action and interactive response.
-- **Do** write the observer's annotations in the marker hand (Reenie Beanie, 1.5rem to 2rem, marker red), with drawn arrows where they point at something.
-- **Do** show the keep orbit openly in fuel teal (fuel on night, fuel-ink on paper).
-- **Do** set every live number in tabular lining numerals, in mono for readings and in the display face for headline totals.
-- **Do** gate every animation behind prefers-reduced-motion and give it a still, complete fallback.
-- **Do** use pill controls (999px) and nearly square paper (4px to 10px).
+- **Do** put every section in a well on the tray lip, with the 8px/12px lip showing between wells.
+- **Do** make the primary action a yellow studded brick with a shaded underside that lifts on hover and drops on press.
+- **Do** put copy that must be read or copied on a white parts-label sticker, tilted no more than a few degrees.
+- **Do** set numbers, addresses, hashes and times in JetBrains Mono with tabular figures.
+- **Do** tint every shadow navy (rgba(6,18,72,...)).
+- **Do** gate pinned, scrubbed and looping motion behind prefers-reduced-motion with a static fallback.
+- **Do** draw bricks top-down with exact studs, in the six brick colors only.
 
 ### Don't:
-- **Don't** build the dark crypto hero: a big counter, a CA box and a row of stat cards.
-- **Don't** use generic space-neon: stock nebulae, purple-cyan gradients, glowing grids on black.
-- **Don't** use recorder orange as an accent or text; it is only the paper's ruling.
-- **Don't** put amber text or fills on paper; a burn on paper reads in marker red.
-- **Don't** give night surfaces drop shadows; only paper floats.
-- **Don't** use the legacy alias tokens or helpers (soot, ember, plaque, btn-coal, sign-lettering and the rest) on public surfaces; they exist only for /memex.
+- **Don't** use piggy-bank pink for anything but keep runs.
+- **Don't** use the LEGO name, logo, minifigure shape or trade dress; bricks are generic.
+- **Don't** build the dark crypto hero with counter, CA box and stat cards, and don't draw a literal living-room cartoon.
+- **Don't** give Vac's amber eye color to anything but Vac.
+- **Don't** use black or grey shadows, or generic floating card shadows.
+- **Don't** set display type at normal width or below weight 800.
+- **Don't** put uppercase tracked eyebrows or kickers above headlines.

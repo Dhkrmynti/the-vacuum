@@ -1,78 +1,86 @@
 @import "tailwindcss";
-@import "./fonts.css";
 
 /*
-  LAVA PIT: the bottom of a pixel mine. Cave stone, a grass line far above, a lava pit
-  that really burns, and Brr, a penguin miner, working the ledge. Square corners, stepped motion.
+  THE VACUUM: a brick-sorting tray seen from above. Cobalt molded plastic, deep wells,
+  studded bricks in primary colours, white parts labels, and Vac, the robot vacuum, working it.
 */
 @theme {
-  /* the cave */
-  --color-night: #15110e;
-  --color-night-2: #1d1714;
-  --color-panel: #2a221d;
-  --color-panel-line: #3e332b;
-  --color-star: #f4ecdc;
-  --color-star-dim: #b5a896;
-  /* signs and paper (full log drawer) */
-  --color-paper: #efe6d4;
-  --color-paper-shade: #ddd1ba;
-  --color-grid: #c47f1c;
-  --color-pen: #2a1d14;
-  --color-pen-soft: #6b5a48;
-  --color-marker: #d9420f;
-  --color-marker-deep: #8f2108;
-  /* lava: live and actionable only */
-  --color-ring: #ff8a1f;
-  --color-ring-hot: #ffe066;
-  /* the chest: the keep runs, ETH ore blue */
-  --color-fuel: #7fdcf0;
-  --color-fuel-ink: #1f6f86;
-  /* the surface */
-  --color-grass: #5fa83b;
-  --color-dirt: #6b4a2f;
+  /* the tray */
+  --color-night: #1b3fb4;      /* the well floor: the ground of every section */
+  --color-night-2: #16359c;    /* a deeper well */
+  --color-panel: #2552d8;      /* the tray lip, between the wells */
+  --color-panel-line: #4470ea; /* the lit edge of a lip */
+  --color-star: #f4f6ff;       /* text on plastic */
+  --color-star-dim: #cdd6f7;   /* secondary text on plastic */
+  /* the parts label (copy, the drawer, the log) */
+  --color-paper: #f6f7fb;
+  --color-paper-shade: #e3e7f3;
+  --color-grid: #c9d1ea;
+  --color-pen: #121a3a;
+  --color-pen-soft: #4b5478;
+  --color-marker: #d81e28;
+  --color-marker-deep: #9c0f17;
+  /* the yellow brick: live readings and the primary action */
+  --color-ring: #ffc21a;
+  --color-ring-hot: #ffe27a;
+  /* the piggy bank: keep runs, and only keep runs */
+  --color-fuel: #ff9cc4;
+  --color-fuel-ink: #a8255c;
+  /* Vac */
+  --color-vac: #262a33;
+  --color-vac-lid: #353a46;
+  --color-eye: #ffb020;
 
   /* legacy names used by the operator panel, remapped into this world */
-  --color-soot: #15110e;
-  --color-char: #1d1714;
-  --color-wood: #2a221d;
-  --color-bark: #3e332b;
-  --color-ember: #ff8a1f;
-  --color-flame: #ff8a1f;
-  --color-hot: #efe6d4;
-  --color-ash: #b5a896;
-  --color-ash-light: #f4ecdc;
-  --color-plaque: #efe6d4;
-  --color-plaque-ink: #2a1d14;
-  --color-cold: #7fdcf0;
+  --color-soot: #16359c;
+  --color-char: #1b3fb4;
+  --color-wood: #2552d8;
+  --color-bark: #4470ea;
+  --color-ember: #ffc21a;
+  --color-flame: #ffc21a;
+  --color-hot: #f6f7fb;
+  --color-ash: #cdd6f7;
+  --color-ash-light: #f4f6ff;
+  --color-plaque: #f6f7fb;
+  --color-plaque-ink: #121a3a;
+  --color-cold: #ff9cc4;
 
-  --font-display: "Pixelify Sans", "Courier New", monospace;
-  --font-body: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Arial Narrow", sans-serif;
+  --font-body: "Figtree Variable", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --font-pixel: "Silkscreen", "Courier New", monospace;
-  --font-hand: "Silkscreen", monospace;
-  --font-sign: "Pixelify Sans", monospace;
+  --font-pixel: "Figtree Variable", system-ui, sans-serif;
+  --font-hand: "Bricolage Grotesque Variable", sans-serif;
+  --font-sign: "Bricolage Grotesque Variable", sans-serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('/fonts/JetBrainsMono-var.woff2') format('woff2');
+}
+
 :root {
-  /* escrow fill 0..1, written by the page; warms the lava glow */
-  --hearth: 0;
   color-scheme: dark;
+  /* escrow fill 0..1, written by the page */
+  --charge: 0;
 }
 
 @layer base {
   html {
-    background-color: var(--color-night);
+    background-color: var(--color-panel);
     color: var(--color-star);
-    scrollbar-color: var(--color-panel-line) var(--color-night);
+    scrollbar-color: var(--color-ring) var(--color-night-2);
     overflow-anchor: none;
   }
 
   body {
     margin: 0;
     font-family: var(--font-body);
-    background-color: var(--color-night);
+    background-color: var(--color-panel);
     color: var(--color-star);
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
@@ -81,12 +89,13 @@
 
   ::selection {
     background: var(--color-ring);
-    color: var(--color-night);
+    color: var(--color-pen);
   }
 
   :focus-visible {
-    outline: 3px solid var(--color-ring-hot);
+    outline: 3px solid var(--color-ring);
     outline-offset: 3px;
+    border-radius: 6px;
   }
 
   a {
@@ -99,207 +108,274 @@
   height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-night);
+  background: var(--color-night-2);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-panel-line);
-  border: 3px solid var(--color-night);
-}
-::-webkit-scrollbar-thumb:hover {
   background: var(--color-ring);
+  border: 3px solid var(--color-night-2);
+  border-radius: 999px;
 }
 
 .tabular {
   font-variant-numeric: tabular-nums lining-nums;
 }
 
-/* Everything below is a component layer, so Tailwind utilities on an element still win. */
 @layer components {
 /* ───────── Voices ───────── */
 .display {
   font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: 0;
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+/* box lettering: the wordmark and the biggest numbers */
+.box-type {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 75%;
+  line-height: 0.82;
+  letter-spacing: -0.03em;
 }
 .pxl,
 .label {
-  font-family: var(--font-pixel);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .hand {
-  font-family: var(--font-pixel);
+  font-family: var(--font-display);
+  font-weight: 600;
   line-height: 1.1;
 }
-/* pixel letters cast a hard one-step shadow, like a game title */
-.px-title {
-  font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 0.9;
-  text-shadow: 0.06em 0.06em 0 #0b0806;
-}
 
-/* ───────── The world ───────── */
-.sky {
-  background:
-    radial-gradient(70% 40% at 50% 100%, color-mix(in oklab, var(--color-ring) calc(6% + var(--hearth) * 10%), transparent) 0%, transparent 70%),
-    var(--color-night);
-}
-/* cave stone, one 32px tile of blocks */
-.px-stone {
-  background-color: #1d1714;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' shape-rendering='crispEdges'%3E%3Crect width='32' height='32' fill='%231d1714'/%3E%3Crect x='0' y='0' width='15' height='15' fill='%23211a16'/%3E%3Crect x='16' y='16' width='16' height='16' fill='%23211a16'/%3E%3Crect x='4' y='4' width='4' height='2' fill='%23282019'/%3E%3Crect x='22' y='6' width='6' height='2' fill='%23181310'/%3E%3Crect x='8' y='22' width='6' height='2' fill='%23181310'/%3E%3Crect x='24' y='24' width='4' height='2' fill='%23282019'/%3E%3Crect x='0' y='15' width='32' height='1' fill='%23120e0c'/%3E%3Crect x='15' y='0' width='1' height='15' fill='%23120e0c'/%3E%3Crect x='0' y='31' width='32' height='1' fill='%23120e0c'/%3E%3Crect x='7' y='16' width='1' height='15' fill='%23120e0c'/%3E%3C/svg%3E");
-  background-size: 64px 64px;
-  image-rendering: pixelated;
-}
-.px-dirt {
-  background-color: var(--color-dirt);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%236b4a2f'/%3E%3Crect x='2' y='3' width='2' height='2' fill='%23573a23'/%3E%3Crect x='10' y='1' width='2' height='2' fill='%237d5838'/%3E%3Crect x='6' y='9' width='2' height='2' fill='%23573a23'/%3E%3Crect x='12' y='11' width='2' height='2' fill='%237d5838'/%3E%3Crect x='1' y='13' width='2' height='2' fill='%237d5838'/%3E%3C/svg%3E");
-  background-size: 48px 48px;
-  image-rendering: pixelated;
-}
-.px-grass {
-  background:
-    linear-gradient(#78c24a 0 4px, var(--color-grass) 4px 12px, transparent 12px),
-    repeating-linear-gradient(90deg, var(--color-grass) 0 12px, transparent 12px 18px, var(--color-grass) 18px 24px, transparent 24px 36px) 0 12px / 100% 6px no-repeat;
-}
-
-/* ───────── Panels: square, bevelled, with a hard outline ───────── */
-.px-panel {
+/* ───────── The tray ───────── */
+/* a well: one molded compartment, the floor every section sits on */
+/* the molded wall runs down from the lit lip into the floor: a dark crease at the top edge,
+   the wall's own shade falling inward, and a faint bounce of light off the far wall */
+.well {
   position: relative;
-  background: var(--color-panel);
-  color: var(--color-star);
+  background-color: var(--color-night);
+  border-radius: 28px;
   box-shadow:
-    0 0 0 4px #0b0806,
-    inset 4px 4px 0 rgba(255, 255, 255, 0.07),
-    inset -4px -4px 0 rgba(0, 0, 0, 0.32),
-    8px 8px 0 4px rgba(0, 0, 0, 0.45);
+    0 -1px 0 rgba(6, 18, 72, 0.45),
+    0 1.5px 0 rgba(255, 255, 255, 0.28),
+    inset 0 0 0 1px rgba(6, 18, 72, 0.35),
+    inset 0 3px 0 rgba(6, 18, 72, 0.4),
+    inset 0 22px 30px -8px rgba(6, 18, 72, 0.62),
+    inset 0 -16px 26px -12px rgba(120, 150, 255, 0.16);
 }
-.px-frame {
+.well-deep {
+  background-color: var(--color-night-2);
+}
+/* a small well inside a larger one: a sub-compartment */
+.cell {
   position: relative;
-  background: #0b0806;
-  padding: 6px;
-  box-shadow: 0 0 0 4px #3e332b, 10px 10px 0 4px rgba(0, 0, 0, 0.45);
-  image-rendering: pixelated;
+  background-color: var(--color-night-2);
+  border-radius: 18px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1px rgba(6, 18, 72, 0.4),
+    inset 0 2px 0 rgba(6, 18, 72, 0.45),
+    inset 0 14px 20px -6px rgba(6, 18, 72, 0.55),
+    inset 0 -10px 18px -10px rgba(120, 150, 255, 0.14);
+}
+/* the tray lip between wells carries a molded ridge */
+.lip {
+  background-color: var(--color-panel);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 40%);
 }
 
-/* paper: the full-log drawer and lore signs */
+/* the parts label: a white sticker pressed onto the plastic */
+.label-sticker,
 .paper {
   position: relative;
   background-color: var(--color-paper);
   color: var(--color-pen);
-  box-shadow: 0 0 0 4px #0b0806, inset -4px -4px 0 rgba(0, 0, 0, 0.12), 8px 8px 0 4px rgba(0, 0, 0, 0.45);
-}
-.sprockets {
+  border-radius: 14px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 14px 30px -8px rgba(6, 18, 72, 0.55),
+    0 3px 6px rgba(6, 18, 72, 0.25);
 }
 
-/* ───────── Buttons: pixel keys that press down ───────── */
+.px-panel {
+  position: relative;
+  background: var(--color-night-2);
+  color: var(--color-star);
+  border-radius: 18px;
+  box-shadow: inset 0 6px 14px rgba(6, 18, 72, 0.5), 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ───────── Buttons: bricks you press ───────── */
 .btn-ring,
 .btn-ghost,
 .btn-pen,
 .btn-coal {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  font-family: var(--font-pixel);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  border-radius: 0;
-  transition: transform 0.08s steps(2), box-shadow 0.08s steps(2), background-color 0.12s steps(2), color 0.12s steps(2);
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition:
+    transform 0.14s var(--ease-out-expo),
+    box-shadow 0.14s var(--ease-out-expo),
+    background-color 0.18s ease,
+    color 0.18s ease;
 }
+/* the yellow 1xN brick: studs along the top edge */
 .btn-ring,
 .btn-coal {
-  background: var(--color-ring);
-  color: #1a1412;
-  box-shadow: 0 0 0 3px #0b0806, inset 0 -5px 0 #c2370f, inset 0 3px 0 rgba(255, 255, 255, 0.45), 0 6px 0 3px #0b0806;
+  background-color: var(--color-ring);
+  color: var(--color-pen);
+  box-shadow:
+    inset 0 -5px 0 #c98a00,
+    inset 0 2px 0 rgba(255, 255, 255, 0.55),
+    0 8px 16px -6px rgba(6, 18, 72, 0.6);
+}
+.btn-ring::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: -6px;
+  height: 7px;
+  background: radial-gradient(circle at 50% 100%, var(--color-ring) 0 5px, transparent 5.5px) 0 0 / 22px 7px repeat-x;
+  pointer-events: none;
 }
 .btn-ring:hover,
 .btn-coal:hover {
-  background: var(--color-ring-hot);
+  background-color: var(--color-ring-hot);
+  transform: translateY(-2px);
+}
+.btn-ring:hover::before {
+  background-image: radial-gradient(circle at 50% 100%, var(--color-ring-hot) 0 5px, transparent 5.5px);
 }
 .btn-ring:active,
 .btn-coal:active {
-  transform: translateY(5px);
-  box-shadow: 0 0 0 3px #0b0806, inset 0 -2px 0 #c2370f, inset 0 3px 0 rgba(255, 255, 255, 0.45), 0 1px 0 3px #0b0806;
+  transform: translateY(3px);
+  box-shadow: inset 0 -2px 0 #c98a00, inset 0 2px 0 rgba(255, 255, 255, 0.55), 0 2px 4px rgba(6, 18, 72, 0.5);
 }
+/* a white brick for secondary actions */
 .btn-ghost {
-  background: #3a302a;
+  background-color: rgba(244, 246, 255, 0.1);
   color: var(--color-star);
-  box-shadow: 0 0 0 3px #0b0806, inset 0 -4px 0 #231c17, inset 0 3px 0 rgba(255, 255, 255, 0.12), 0 5px 0 3px #0b0806;
+  box-shadow: inset 0 0 0 2px rgba(244, 246, 255, 0.28);
 }
 .btn-ghost:hover {
-  background: #4b3f37;
-  color: var(--color-ring-hot);
+  background-color: rgba(244, 246, 255, 0.2);
+  color: #fff;
 }
 .btn-ghost:active {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 3px #0b0806, inset 0 -2px 0 #231c17, 0 1px 0 3px #0b0806;
+  transform: translateY(2px);
 }
+/* white and black bricks for the other actions, studs and all */
+.brick-white,
+.brick-dark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition:
+    transform 0.14s var(--ease-out-expo),
+    box-shadow 0.14s var(--ease-out-expo),
+    background-color 0.18s ease;
+}
+.brick-white::before,
+.brick-dark::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: -5px;
+  height: 6px;
+  background: radial-gradient(circle at 50% 100%, var(--stud) 0 4.5px, transparent 5px) 0 0 / 20px 6px repeat-x;
+  pointer-events: none;
+}
+.brick-white {
+  --stud: var(--color-paper);
+  background-color: var(--color-paper);
+  color: var(--color-pen);
+  box-shadow: inset 0 -4px 0 #b9bfd2, inset 0 2px 0 #fff, 0 8px 16px -8px rgba(6, 18, 72, 0.6);
+}
+.brick-white:hover {
+  --stud: #fff;
+  background-color: #fff;
+  transform: translateY(-2px);
+}
+.brick-dark {
+  --stud: #2a2d36;
+  background-color: #2a2d36;
+  color: var(--color-paper);
+  box-shadow: inset 0 -4px 0 #15171c, inset 0 2px 0 rgba(255, 255, 255, 0.14), 0 8px 16px -8px rgba(6, 18, 72, 0.6);
+}
+.brick-dark:hover {
+  --stud: #3a3e4a;
+  background-color: #3a3e4a;
+  transform: translateY(-2px);
+}
+.brick-white:active,
+.brick-dark:active {
+  transform: translateY(3px);
+}
+/* a dark outline on a label (drawer, operator panel) */
 .btn-pen {
   color: var(--color-pen);
-  background: var(--color-paper);
-  box-shadow: 0 0 0 3px var(--color-pen);
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-pen);
 }
 .btn-pen:hover {
-  background: var(--color-pen);
+  background-color: var(--color-pen);
   color: var(--color-paper);
 }
+.btn-pen:active {
+  transform: translateY(2px);
+}
 
-/* ───────── Pixel motion (all of it stepped) ───────── */
+/* ───────── Motion ───────── */
 @media (prefers-reduced-motion: no-preference) {
-  .px-flame {
-    transform-box: view-box;
-    animation: px-flick 0.6s steps(3) infinite alternate;
+  .brush-spin {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: brush-spin 0.9s linear infinite;
   }
-  .px-bubble {
-    animation: px-bubble 2.4s steps(8) infinite;
+  .brush-spin.fast {
+    animation-duration: 0.28s;
   }
-  .px-lava-crust {
-    animation: px-crust 3.2s steps(8) infinite;
+  .eye-pulse {
+    animation: eye-pulse 2.4s ease-in-out infinite;
   }
-  .px-hop {
-    animation: px-hop 0.5s steps(2) infinite alternate;
-  }
-  .px-bob {
-    animation: px-hop 1.4s steps(2) infinite alternate;
-  }
-  .px-sweat {
-    animation: px-sweat 1.6s steps(6) infinite;
+  .vac-idle {
+    animation: vac-idle 5s ease-in-out infinite;
   }
   .reink {
-    animation: reink 0.35s steps(4) both;
+    animation: reink 0.4s var(--ease-out-expo) both;
   }
 }
-@keyframes px-flick {
-  0% { transform: scaleY(0.75); }
-  50% { transform: scaleY(1.1); }
-  100% { transform: scaleY(0.9); }
+@keyframes brush-spin {
+  to { transform: rotate(360deg); }
 }
-@keyframes px-bubble {
-  0% { transform: translateY(0); opacity: 0; }
-  20% { opacity: 1; }
-  80% { transform: translateY(-6px); opacity: 1; }
-  100% { transform: translateY(-8px); opacity: 0; }
+@keyframes eye-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
 }
-@keyframes px-crust {
-  from { transform: translateX(0); }
-  to { transform: translateX(8px); }
-}
-@keyframes px-hop {
-  from { transform: translateY(0); }
-  to { transform: translateY(-4px); }
-}
-@keyframes px-sweat {
-  0% { transform: translateY(0); opacity: 0; }
-  20% { opacity: 1; }
-  100% { transform: translateY(8px); opacity: 0; }
+@keyframes vac-idle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-4deg); }
 }
 @keyframes reink {
-  0% { opacity: 0; transform: translateY(0.2em); }
+  0% { opacity: 0; transform: translateY(0.25em); }
   100% { opacity: 1; transform: none; }
 }
 
@@ -310,6 +386,6 @@
 }
 .sign-lettering {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
 }
 }

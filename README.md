@@ -1,4 +1,4 @@
-# BLAZE — Autonomous Buyback & Burn Engine (Pons Family v2)
+# The Vacuum ($VAC): Autonomous Buyback & Burn Engine (Pons Family v2)
 
 An autonomous token liquidity, buyback, and burn engine deployed on **Robinhood Chain (Chain ID: 4663)** integrated with **Pons Family v2**.
 
@@ -6,7 +6,9 @@ An autonomous token liquidity, buyback, and burn engine deployed on **Robinhood 
 
 ## Overview
 
-BLAZE operates on a perpetual closed-loop mechanism:
+The site tells it as lore: Vac, a little robot vacuum, charges on its dock from every trade, then buys $VAC off the floor and drops it in the bin (0x…dEaD). Every other run feeds the piggy bank (project wallet).
+
+The engine runs a perpetual closed loop:
 1. **Trade & Tax Inflow**: Trading activity generates creator fees in native ETH accumulating in the Fee Escrow (`0xd3AFEB...Ac9e`).
 2. **Auto-Claim Fee**: When claimable fees reach the configured threshold (e.g. `0.015 ETH`), the engine executes `escrow.claim()`.
 3. **Auto-Buyback DEX**: Claimed ETH is immediately swapped for tokens on the DEX (Uniswap v4 / Curve).
@@ -42,8 +44,8 @@ cp .env.example .env
 
 Edit `.env`:
 ```env
-VITE_TOKEN_NAME="BLAZE"
-VITE_TOKEN_SYMBOL="BLAZE"
+VITE_TOKEN_NAME="The Vacuum"
+VITE_TOKEN_SYMBOL="VAC"
 VITE_TOKEN_ADDRESS="0xc5547b341002dcdad191512d5f6f52a928e41bf4"
 VITE_CURVE_ADDRESS="0x..."
 VITE_CREATOR_ADDRESS="0x..."

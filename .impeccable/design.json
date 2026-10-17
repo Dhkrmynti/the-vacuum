@@ -1,351 +1,508 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T02:27:47+00:00",
-  "title": "Design System: VOID",
+  "generatedAt": "2026-10-17T02:46:19.539Z",
+  "title": "Design System: The Vacuum",
   "extensions": {
     "colorMeta": {
-      "night": {
+      "well-floor": {
         "role": "neutral",
-        "displayName": "Control-Room Night",
-        "canonical": "oklch(13.6% 0.016 269.4)",
+        "displayName": "Well Floor Cobalt",
+        "canonical": "#1b3fb4",
         "tonalRamp": [
-          "oklch(15% 0.016 269.4)",
-          "oklch(26% 0.016 269.4)",
-          "oklch(38% 0.016 269.4)",
-          "oklch(49% 0.016 269.4)",
-          "oklch(61% 0.016 269.4)",
-          "oklch(72% 0.016 269.4)",
-          "oklch(84% 0.016 269.4)",
-          "oklch(95% 0.016 269.4)"
+          "oklch(15% 0.159 265.3)",
+          "oklch(26% 0.189 265.3)",
+          "oklch(37% 0.189 265.3)",
+          "oklch(48% 0.189 265.3)",
+          "oklch(59% 0.189 265.3)",
+          "oklch(70% 0.189 265.3)",
+          "oklch(82% 0.180 265.3)",
+          "oklch(95% 0.081 265.3)"
         ]
       },
-      "panel": {
+      "well-deep": {
         "role": "neutral",
-        "displayName": "Console Panel",
-        "canonical": "oklch(20.8% 0.039 267.6)",
+        "displayName": "Deep Well Cobalt",
+        "canonical": "#16359c",
         "tonalRamp": [
-          "oklch(15% 0.037 267.6)",
-          "oklch(26% 0.039 267.6)",
-          "oklch(38% 0.039 267.6)",
-          "oklch(49% 0.039 267.6)",
-          "oklch(61% 0.039 267.6)",
-          "oklch(72% 0.039 267.6)",
-          "oklch(84% 0.039 267.6)",
-          "oklch(95% 0.039 267.6)"
+          "oklch(15% 0.148 265.4)",
+          "oklch(26% 0.171 265.4)",
+          "oklch(37% 0.171 265.4)",
+          "oklch(48% 0.171 265.4)",
+          "oklch(59% 0.171 265.4)",
+          "oklch(70% 0.171 265.4)",
+          "oklch(82% 0.168 265.4)",
+          "oklch(95% 0.077 265.4)"
         ]
       },
-      "panel-line": {
+      "tray-lip": {
         "role": "neutral",
-        "displayName": "Panel Line",
-        "canonical": "oklch(32.0% 0.051 265.3)",
+        "displayName": "Tray Lip Cobalt",
+        "canonical": "#2552d8",
         "tonalRamp": [
-          "oklch(15% 0.039 265.3)",
-          "oklch(26% 0.044 265.3)",
-          "oklch(38% 0.048 265.3)",
-          "oklch(49% 0.051 265.3)",
-          "oklch(61% 0.051 265.3)",
-          "oklch(72% 0.051 265.3)",
-          "oklch(84% 0.047 265.3)",
-          "oklch(95% 0.043 265.3)"
+          "oklch(15% 0.171 265.0)",
+          "oklch(26% 0.211 265.0)",
+          "oklch(37% 0.211 265.0)",
+          "oklch(48% 0.211 265.0)",
+          "oklch(59% 0.211 265.0)",
+          "oklch(70% 0.211 265.0)",
+          "oklch(82% 0.195 265.0)",
+          "oklch(95% 0.085 265.0)"
+        ]
+      },
+      "lip-edge": {
+        "role": "neutral",
+        "displayName": "Lit Lip Edge",
+        "canonical": "#4470ea",
+        "tonalRamp": [
+          "oklch(15% 0.160 265.8)",
+          "oklch(26% 0.191 265.8)",
+          "oklch(37% 0.191 265.8)",
+          "oklch(48% 0.191 265.8)",
+          "oklch(59% 0.191 265.8)",
+          "oklch(70% 0.191 265.8)",
+          "oklch(82% 0.181 265.8)",
+          "oklch(95% 0.081 265.8)"
         ]
       },
       "star": {
         "role": "neutral",
-        "displayName": "Starlight",
-        "canonical": "oklch(89.0% 0.025 265.6)",
+        "displayName": "Star White",
+        "canonical": "#f4f6ff",
         "tonalRamp": [
-          "oklch(15% 0.025 265.6)",
-          "oklch(26% 0.025 265.6)",
-          "oklch(38% 0.025 265.6)",
-          "oklch(49% 0.025 265.6)",
-          "oklch(61% 0.025 265.6)",
-          "oklch(72% 0.025 265.6)",
-          "oklch(84% 0.025 265.6)",
-          "oklch(95% 0.025 265.6)"
+          "oklch(15% 0.012 276.1)",
+          "oklch(26% 0.012 276.1)",
+          "oklch(37% 0.012 276.1)",
+          "oklch(48% 0.012 276.1)",
+          "oklch(59% 0.012 276.1)",
+          "oklch(70% 0.012 276.1)",
+          "oklch(82% 0.012 276.1)",
+          "oklch(95% 0.012 276.1)"
         ]
       },
       "star-dim": {
         "role": "neutral",
-        "displayName": "Dim Starlight",
-        "canonical": "oklch(69.6% 0.042 266.4)",
+        "displayName": "Star Dim",
+        "canonical": "#cdd6f7",
         "tonalRamp": [
-          "oklch(15% 0.038 266.4)",
-          "oklch(26% 0.041 266.4)",
-          "oklch(38% 0.042 266.4)",
-          "oklch(49% 0.042 266.4)",
-          "oklch(61% 0.042 266.4)",
-          "oklch(72% 0.042 266.4)",
-          "oklch(84% 0.042 266.4)",
-          "oklch(95% 0.041 266.4)"
+          "oklch(15% 0.047 273.4)",
+          "oklch(26% 0.047 273.4)",
+          "oklch(37% 0.047 273.4)",
+          "oklch(48% 0.047 273.4)",
+          "oklch(59% 0.047 273.4)",
+          "oklch(70% 0.047 273.4)",
+          "oklch(82% 0.047 273.4)",
+          "oklch(95% 0.047 273.4)"
         ]
       },
-      "paper": {
+      "label-paper": {
         "role": "neutral",
-        "displayName": "Chart Paper",
-        "canonical": "oklch(94.6% 0.017 91.6)",
+        "displayName": "Label Paper",
+        "canonical": "#f6f7fb",
         "tonalRamp": [
-          "oklch(15% 0.017 91.6)",
-          "oklch(26% 0.017 91.6)",
-          "oklch(38% 0.017 91.6)",
-          "oklch(49% 0.017 91.6)",
-          "oklch(61% 0.017 91.6)",
-          "oklch(72% 0.017 91.6)",
-          "oklch(84% 0.017 91.6)",
-          "oklch(95% 0.017 91.6)"
+          "oklch(15% 0.005 275.0)",
+          "oklch(26% 0.005 275.0)",
+          "oklch(37% 0.005 275.0)",
+          "oklch(48% 0.005 275.0)",
+          "oklch(59% 0.005 275.0)",
+          "oklch(70% 0.005 275.0)",
+          "oklch(82% 0.005 275.0)",
+          "oklch(95% 0.005 275.0)"
         ]
       },
-      "paper-face": {
+      "label-shade": {
         "role": "neutral",
-        "displayName": "Paper Face",
-        "canonical": "oklch(96.8% 0.014 88.7)",
+        "displayName": "Label Shade",
+        "canonical": "#e3e7f3",
         "tonalRamp": [
-          "oklch(15% 0.014 88.7)",
-          "oklch(26% 0.014 88.7)",
-          "oklch(38% 0.014 88.7)",
-          "oklch(49% 0.014 88.7)",
-          "oklch(61% 0.014 88.7)",
-          "oklch(72% 0.014 88.7)",
-          "oklch(84% 0.014 88.7)",
-          "oklch(95% 0.014 88.7)"
+          "oklch(15% 0.017 271.2)",
+          "oklch(26% 0.017 271.2)",
+          "oklch(37% 0.017 271.2)",
+          "oklch(48% 0.017 271.2)",
+          "oklch(59% 0.017 271.2)",
+          "oklch(70% 0.017 271.2)",
+          "oklch(82% 0.017 271.2)",
+          "oklch(95% 0.017 271.2)"
         ]
       },
-      "grid": {
+      "label-rule": {
         "role": "neutral",
-        "displayName": "Recorder Grid Orange",
-        "canonical": "oklch(66.8% 0.153 42.9)",
+        "displayName": "Label Rule",
+        "canonical": "#c9d1ea",
         "tonalRamp": [
-          "oklch(15% 0.058 42.9)",
-          "oklch(26% 0.071 42.9)",
-          "oklch(38% 0.083 42.9)",
-          "oklch(49% 0.095 42.9)",
-          "oklch(61% 0.106 42.9)",
-          "oklch(72% 0.094 42.9)",
-          "oklch(84% 0.081 42.9)",
-          "oklch(95% 0.069 42.9)"
+          "oklch(15% 0.036 271.5)",
+          "oklch(26% 0.036 271.5)",
+          "oklch(37% 0.036 271.5)",
+          "oklch(48% 0.036 271.5)",
+          "oklch(59% 0.036 271.5)",
+          "oklch(70% 0.036 271.5)",
+          "oklch(82% 0.036 271.5)",
+          "oklch(95% 0.036 271.5)"
         ]
       },
       "pen": {
         "role": "neutral",
-        "displayName": "Pen Blue-Black",
-        "canonical": "oklch(31.7% 0.114 269.5)",
+        "displayName": "Pen",
+        "canonical": "#121a3a",
         "tonalRamp": [
-          "oklch(15% 0.051 269.5)",
-          "oklch(26% 0.060 269.5)",
-          "oklch(38% 0.069 269.5)",
-          "oklch(49% 0.079 269.5)",
-          "oklch(61% 0.087 269.5)",
-          "oklch(72% 0.077 269.5)",
-          "oklch(84% 0.068 269.5)",
-          "oklch(95% 0.059 269.5)"
+          "oklch(15% 0.063 270.3)",
+          "oklch(26% 0.063 270.3)",
+          "oklch(37% 0.063 270.3)",
+          "oklch(48% 0.063 270.3)",
+          "oklch(59% 0.063 270.3)",
+          "oklch(70% 0.063 270.3)",
+          "oklch(82% 0.063 270.3)",
+          "oklch(95% 0.056 270.3)"
         ]
       },
       "pen-soft": {
         "role": "neutral",
-        "displayName": "Soft Pen",
-        "canonical": "oklch(45.4% 0.058 270.2)",
+        "displayName": "Pen Soft",
+        "canonical": "#4b5478",
         "tonalRamp": [
-          "oklch(15% 0.041 270.2)",
-          "oklch(26% 0.045 270.2)",
-          "oklch(38% 0.050 270.2)",
-          "oklch(49% 0.054 270.2)",
-          "oklch(61% 0.058 270.2)",
-          "oklch(72% 0.054 270.2)",
-          "oklch(84% 0.049 270.2)",
-          "oklch(95% 0.045 270.2)"
+          "oklch(15% 0.060 273.0)",
+          "oklch(26% 0.060 273.0)",
+          "oklch(37% 0.060 273.0)",
+          "oklch(48% 0.060 273.0)",
+          "oklch(59% 0.060 273.0)",
+          "oklch(70% 0.060 273.0)",
+          "oklch(82% 0.060 273.0)",
+          "oklch(95% 0.056 273.0)"
         ]
       },
-      "marker": {
+      "marker-red": {
         "role": "secondary",
-        "displayName": "Observer's Marker Red",
-        "canonical": "oklch(56.3% 0.195 28.7)",
+        "displayName": "Marker Red",
+        "canonical": "#d81e28",
         "tonalRamp": [
-          "oklch(15% 0.066 28.7)",
-          "oklch(26% 0.082 28.7)",
-          "oklch(38% 0.097 28.7)",
-          "oklch(49% 0.113 28.7)",
-          "oklch(61% 0.127 28.7)",
-          "oklch(72% 0.111 28.7)",
-          "oklch(84% 0.095 28.7)",
-          "oklch(95% 0.080 28.7)"
+          "oklch(15% 0.174 25.9)",
+          "oklch(26% 0.216 25.9)",
+          "oklch(37% 0.216 25.9)",
+          "oklch(48% 0.216 25.9)",
+          "oklch(59% 0.216 25.9)",
+          "oklch(70% 0.216 25.9)",
+          "oklch(82% 0.198 25.9)",
+          "oklch(95% 0.086 25.9)"
         ]
       },
-      "ring": {
+      "marker-deep": {
+        "role": "secondary",
+        "displayName": "Marker Deep",
+        "canonical": "#9c0f17",
+        "tonalRamp": [
+          "oklch(15% 0.149 26.2)",
+          "oklch(26% 0.171 26.2)",
+          "oklch(37% 0.171 26.2)",
+          "oklch(48% 0.171 26.2)",
+          "oklch(59% 0.171 26.2)",
+          "oklch(70% 0.171 26.2)",
+          "oklch(82% 0.168 26.2)",
+          "oklch(95% 0.077 26.2)"
+        ]
+      },
+      "brick-yellow": {
         "role": "primary",
-        "displayName": "Photon Ring Amber",
-        "canonical": "oklch(81.0% 0.152 69.3)",
+        "displayName": "Yellow Brick",
+        "canonical": "#ffc21a",
         "tonalRamp": [
-          "oklch(15% 0.058 69.3)",
-          "oklch(26% 0.070 69.3)",
-          "oklch(38% 0.082 69.3)",
-          "oklch(49% 0.094 69.3)",
-          "oklch(61% 0.105 69.3)",
-          "oklch(72% 0.093 69.3)",
-          "oklch(84% 0.081 69.3)",
-          "oklch(95% 0.069 69.3)"
+          "oklch(15% 0.147 84.9)",
+          "oklch(26% 0.169 84.9)",
+          "oklch(37% 0.169 84.9)",
+          "oklch(48% 0.169 84.9)",
+          "oklch(59% 0.169 84.9)",
+          "oklch(70% 0.169 84.9)",
+          "oklch(82% 0.167 84.9)",
+          "oklch(95% 0.077 84.9)"
         ]
       },
-      "ring-hot": {
+      "brick-yellow-hot": {
         "role": "primary",
-        "displayName": "Ring Hot",
-        "canonical": "oklch(92.3% 0.083 85.0)",
+        "displayName": "Hot Yellow Brick",
+        "canonical": "#ffe27a",
         "tonalRamp": [
-          "oklch(15% 0.045 85.0)",
-          "oklch(26% 0.052 85.0)",
-          "oklch(38% 0.059 85.0)",
-          "oklch(49% 0.065 85.0)",
-          "oklch(61% 0.071 85.0)",
-          "oklch(72% 0.064 85.0)",
-          "oklch(84% 0.058 85.0)",
-          "oklch(95% 0.051 85.0)"
+          "oklch(15% 0.124 94.1)",
+          "oklch(26% 0.128 94.1)",
+          "oklch(37% 0.128 94.1)",
+          "oklch(48% 0.128 94.1)",
+          "oklch(59% 0.128 94.1)",
+          "oklch(70% 0.128 94.1)",
+          "oklch(82% 0.128 94.1)",
+          "oklch(95% 0.069 94.1)"
         ]
       },
-      "fuel": {
-        "role": "tertiary",
-        "displayName": "Observatory Fuel Teal",
-        "canonical": "oklch(74.7% 0.102 176.5)",
+      "brick-yellow-edge": {
+        "role": "primary",
+        "displayName": "Yellow Brick Edge",
+        "canonical": "#c98a00",
         "tonalRamp": [
-          "oklch(15% 0.049 176.5)",
-          "oklch(26% 0.057 176.5)",
-          "oklch(38% 0.065 176.5)",
-          "oklch(49% 0.073 176.5)",
-          "oklch(61% 0.080 176.5)",
-          "oklch(72% 0.072 176.5)",
-          "oklch(84% 0.064 176.5)",
-          "oklch(95% 0.056 176.5)"
+          "oklch(15% 0.132 76.5)",
+          "oklch(26% 0.142 76.5)",
+          "oklch(37% 0.142 76.5)",
+          "oklch(48% 0.142 76.5)",
+          "oklch(59% 0.142 76.5)",
+          "oklch(70% 0.142 76.5)",
+          "oklch(82% 0.142 76.5)",
+          "oklch(95% 0.072 76.5)"
         ]
       },
-      "fuel-ink": {
+      "piggy-pink": {
         "role": "tertiary",
-        "displayName": "Fuel Ink",
-        "canonical": "oklch(49.8% 0.083 177.2)",
+        "displayName": "Piggy-Bank Pink",
+        "canonical": "#ff9cc4",
         "tonalRamp": [
-          "oklch(15% 0.045 177.2)",
-          "oklch(26% 0.052 177.2)",
-          "oklch(38% 0.059 177.2)",
-          "oklch(49% 0.065 177.2)",
-          "oklch(61% 0.071 177.2)",
-          "oklch(72% 0.064 177.2)",
-          "oklch(84% 0.058 177.2)",
-          "oklch(95% 0.051 177.2)"
+          "oklch(15% 0.123 354.6)",
+          "oklch(26% 0.126 354.6)",
+          "oklch(37% 0.126 354.6)",
+          "oklch(48% 0.126 354.6)",
+          "oklch(59% 0.126 354.6)",
+          "oklch(70% 0.126 354.6)",
+          "oklch(82% 0.126 354.6)",
+          "oklch(95% 0.069 354.6)"
+        ]
+      },
+      "piggy-ink": {
+        "role": "tertiary",
+        "displayName": "Piggy Ink",
+        "canonical": "#a8255c",
+        "tonalRamp": [
+          "oklch(15% 0.148 0.7)",
+          "oklch(26% 0.171 0.7)",
+          "oklch(37% 0.171 0.7)",
+          "oklch(48% 0.171 0.7)",
+          "oklch(59% 0.171 0.7)",
+          "oklch(70% 0.171 0.7)",
+          "oklch(82% 0.168 0.7)",
+          "oklch(95% 0.077 0.7)"
+        ]
+      },
+      "vac-charcoal": {
+        "role": "neutral",
+        "displayName": "Vac Charcoal",
+        "canonical": "#262a33",
+        "tonalRamp": [
+          "oklch(15% 0.018 266.3)",
+          "oklch(26% 0.018 266.3)",
+          "oklch(37% 0.018 266.3)",
+          "oklch(48% 0.018 266.3)",
+          "oklch(59% 0.018 266.3)",
+          "oklch(70% 0.018 266.3)",
+          "oklch(82% 0.018 266.3)",
+          "oklch(95% 0.018 266.3)"
+        ]
+      },
+      "vac-lid": {
+        "role": "neutral",
+        "displayName": "Vac Lid",
+        "canonical": "#353a46",
+        "tonalRamp": [
+          "oklch(15% 0.022 267.4)",
+          "oklch(26% 0.022 267.4)",
+          "oklch(37% 0.022 267.4)",
+          "oklch(48% 0.022 267.4)",
+          "oklch(59% 0.022 267.4)",
+          "oklch(70% 0.022 267.4)",
+          "oklch(82% 0.022 267.4)",
+          "oklch(95% 0.022 267.4)"
+        ]
+      },
+      "vac-eye": {
+        "role": "neutral",
+        "displayName": "Vac Eye Amber",
+        "canonical": "#ffb020",
+        "tonalRamp": [
+          "oklch(15% 0.145 75.0)",
+          "oklch(26% 0.165 75.0)",
+          "oklch(37% 0.165 75.0)",
+          "oklch(48% 0.165 75.0)",
+          "oklch(59% 0.165 75.0)",
+          "oklch(70% 0.165 75.0)",
+          "oklch(82% 0.164 75.0)",
+          "oklch(95% 0.076 75.0)"
+        ]
+      },
+      "brick-red": {
+        "role": "neutral",
+        "displayName": "Red Brick",
+        "canonical": "#e3262f",
+        "tonalRamp": [
+          "oklch(15% 0.176 25.5)",
+          "oklch(26% 0.220 25.5)",
+          "oklch(37% 0.220 25.5)",
+          "oklch(48% 0.220 25.5)",
+          "oklch(59% 0.220 25.5)",
+          "oklch(70% 0.220 25.5)",
+          "oklch(82% 0.201 25.5)",
+          "oklch(95% 0.087 25.5)"
+        ]
+      },
+      "brick-green": {
+        "role": "neutral",
+        "displayName": "Green Brick",
+        "canonical": "#1f9d55",
+        "tonalRamp": [
+          "oklch(15% 0.137 152.3)",
+          "oklch(26% 0.150 152.3)",
+          "oklch(37% 0.150 152.3)",
+          "oklch(48% 0.150 152.3)",
+          "oklch(59% 0.150 152.3)",
+          "oklch(70% 0.150 152.3)",
+          "oklch(82% 0.150 152.3)",
+          "oklch(95% 0.073 152.3)"
+        ]
+      },
+      "brick-white": {
+        "role": "neutral",
+        "displayName": "White Brick",
+        "canonical": "#eef0f6",
+        "tonalRamp": [
+          "oklch(15% 0.008 271.3)",
+          "oklch(26% 0.008 271.3)",
+          "oklch(37% 0.008 271.3)",
+          "oklch(48% 0.008 271.3)",
+          "oklch(59% 0.008 271.3)",
+          "oklch(70% 0.008 271.3)",
+          "oklch(82% 0.008 271.3)",
+          "oklch(95% 0.008 271.3)"
+        ]
+      },
+      "brick-black": {
+        "role": "neutral",
+        "displayName": "Black Brick",
+        "canonical": "#2a2d36",
+        "tonalRamp": [
+          "oklch(15% 0.017 270.8)",
+          "oklch(26% 0.017 270.8)",
+          "oklch(37% 0.017 270.8)",
+          "oklch(48% 0.017 270.8)",
+          "oklch(59% 0.017 270.8)",
+          "oklch(70% 0.017 270.8)",
+          "oklch(82% 0.017 270.8)",
+          "oklch(95% 0.017 270.8)"
+        ]
+      },
+      "brick-orange": {
+        "role": "neutral",
+        "displayName": "Orange Brick",
+        "canonical": "#ff7a1a",
+        "tonalRamp": [
+          "oklch(15% 0.157 48.9)",
+          "oklch(26% 0.187 48.9)",
+          "oklch(37% 0.187 48.9)",
+          "oklch(48% 0.187 48.9)",
+          "oklch(59% 0.187 48.9)",
+          "oklch(70% 0.187 48.9)",
+          "oklch(82% 0.178 48.9)",
+          "oklch(95% 0.080 48.9)"
         ]
       }
     },
     "typographyMeta": {
-      "display-hero": {
-        "displayName": "Display Hero",
-        "purpose": "The VOID name only, split around the hole on desktop."
-      },
       "display": {
-        "displayName": "Display",
-        "purpose": "Section headings; condensed uppercase instrument face."
+        "displayName": "Box Lettering",
+        "purpose": "The wordmark on the hero label and the finale line."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Tagline, sub-section and card headings, orbit step names."
+        "purpose": "One per section well, on plastic in star white."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Slip titles on paper; button text uses the same face at 800."
+        "purpose": "Run stage names, story chapter titles, the status label's state, the lead run's amount."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Explanatory paragraphs, 44ch to 54ch."
+        "purpose": "Lore and explanation, held to 34-56ch."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Uppercase tracked labels for fields, readings and nav."
+        "purpose": "Lowercase field names, counters, dock status, run tags."
       },
-      "reading": {
-        "displayName": "Reading",
-        "purpose": "Mono tabular readings: addresses, ETH, timestamps, tx hashes."
-      },
-      "hand": {
-        "displayName": "Observer's Hand",
-        "purpose": "Marker-red annotations, the Void's quotes, log remarks."
+      "number": {
+        "displayName": "Number",
+        "purpose": "ETH amounts, addresses, tx hashes, timestamps, percentages."
       }
     },
     "shadows": [
       {
-        "name": "paper-drop",
-        "value": "0 30px 60px -30px rgba(0, 0, 0, 0.85)",
-        "purpose": "Every paper surface; only paper casts a shadow."
+        "name": "well-wall",
+        "value": "0 -1px 0 rgba(6,18,72,0.45), 0 1.5px 0 rgba(255,255,255,0.28), inset 0 0 0 1px rgba(6,18,72,0.35), inset 0 3px 0 rgba(6,18,72,0.4), inset 0 22px 30px -8px rgba(6,18,72,0.62), inset 0 -16px 26px -12px rgba(120,150,255,0.16)",
+        "purpose": "Every section well: crease at the top edge, wall shade falling inward, faint bounce off the far wall."
       },
       {
-        "name": "ring-glow",
-        "value": "0 12px 30px -10px rgba(255, 173, 66, 0.75)",
-        "purpose": "Primary action at rest."
+        "name": "cell-wall",
+        "value": "0 1px 0 rgba(255,255,255,0.2), inset 0 0 0 1px rgba(6,18,72,0.4), inset 0 2px 0 rgba(6,18,72,0.45), inset 0 14px 20px -6px rgba(6,18,72,0.55), inset 0 -10px 18px -10px rgba(120,150,255,0.14)",
+        "purpose": "Sub-compartments inside a well."
       },
       {
-        "name": "ring-glow-hover",
-        "value": "0 18px 40px -12px rgba(255, 173, 66, 0.9)",
-        "purpose": "Primary action on hover."
+        "name": "sticker",
+        "value": "0 1px 0 rgba(255,255,255,0.9) inset, 0 14px 30px -8px rgba(6,18,72,0.55), 0 3px 6px rgba(6,18,72,0.25)",
+        "purpose": "Parts labels and run tags lying on the plastic."
       },
       {
-        "name": "lamp-glow",
-        "value": "0 0 10px 2px rgba(255, 173, 66, 0.6)",
-        "purpose": "Live status lamp and the margin thread's pen tip."
+        "name": "brick-yellow-underside",
+        "value": "inset 0 -5px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,0.55), 0 8px 16px -6px rgba(6,18,72,0.6)",
+        "purpose": "The yellow brick's shaded underside and cast shadow."
       },
       {
-        "name": "header-settle",
-        "value": "0 12px 30px -18px rgba(0, 0, 0, 0.9)",
-        "purpose": "Fixed header once scrolled past 24px."
+        "name": "brick-yellow-pressed",
+        "value": "inset 0 -2px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,0.55), 0 2px 4px rgba(6,18,72,0.5)",
+        "purpose": "The yellow brick while pressed."
       },
       {
-        "name": "photon-ring",
-        "value": "0 0 0 2px rgba(255,226,166,0.9), 0 0 60px 12px rgba(255,173,66,0.45), 0 0 160px 40px rgba(255,173,66,0.18)",
-        "purpose": "The finale's swallowing circle only."
+        "name": "brick-white-underside",
+        "value": "inset 0 -4px 0 #b9bfd2, inset 0 2px 0 #fff, 0 8px 16px -8px rgba(6,18,72,0.6)",
+        "purpose": "White brick buttons."
+      },
+      {
+        "name": "brick-dark-underside",
+        "value": "inset 0 -4px 0 #15171c, inset 0 2px 0 rgba(255,255,255,0.14), 0 8px 16px -8px rgba(6,18,72,0.6)",
+        "purpose": "Dark brick buttons."
+      },
+      {
+        "name": "nav-scrolled",
+        "value": "0 10px 24px -14px rgba(6,18,72,0.8)",
+        "purpose": "The nav once the page scrolls."
       }
     ],
     "motion": [
       {
         "name": "ease-out-expo",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Default curve: button lift, mark rotation, re-ink, intro reveals."
+        "purpose": "Brick lift and press, sticker re-ink, Vac quip swaps, nav mark spin."
       },
       {
-        "name": "needle-ballistic",
-        "value": "elastic.out(1.1, 0.35), 1.6s, 0.4s delay",
-        "purpose": "Accretion meter needle overshoot and settle."
+        "name": "brick-press",
+        "value": "0.14s",
+        "purpose": "Transform and shadow on brick hover (-2px) and press (+3px)."
       },
       {
-        "name": "reink",
-        "value": "0.7s ease-out-expo; opacity 0, blur(6px), translateY(0.2em) to rest",
-        "purpose": "Only the changed digits of a live number."
+        "name": "color-shift",
+        "value": "0.18s ease",
+        "purpose": "Background and text color on hover."
       },
       {
-        "name": "count-up",
-        "value": "2s expo.out, once, on entering view",
-        "purpose": "First reading of a live number."
+        "name": "scroll-scrub",
+        "value": "scrub 0.6-0.8",
+        "purpose": "Pinned hero sweep, run sequence, story pan and finale vortex; all gated by prefers-reduced-motion."
       },
       {
-        "name": "intro",
-        "value": "expo.out timeline: hole from scale 0.7 + blur(18px) over 2s; letters pulled in 1.6s; hero lines stagger 0.09s; slips drop in rotated",
-        "purpose": "First-view arrival."
+        "name": "compartment-press",
+        "value": "0.8s expo.out, stagger 0.07",
+        "purpose": "Cells pressed into the tray as they enter view."
       },
       {
-        "name": "orbit-pin",
-        "value": "ScrollTrigger pin, +=400%, scrub 0.8, min-width 900px",
-        "purpose": "Pinned five-step orbit sequence; sticky hole below 900px."
+        "name": "tag-stamp",
+        "value": "0.5s back.out(2.4)",
+        "purpose": "Run tags stamped onto compartments with overshoot."
       },
       {
-        "name": "recorder-trace",
-        "value": "strokeDashoffset 1 to 0, scrub 0.4, per log row",
-        "purpose": "Pen trace drawn with scroll down the observing log."
+        "name": "brush-spin",
+        "value": "0.9s linear infinite (0.28s on a run)",
+        "purpose": "Vac's side brush."
       },
       {
-        "name": "margin-thread",
-        "value": "clip-path reveal + pen tip, scrub 0.3, desktop only",
-        "purpose": "Pen thread in the left margin from hero to log."
-      },
-      {
-        "name": "finale-swallow",
-        "value": "scale 0.18 to 9, power2.in, scrub 0.6, 220svh, min-width 1024px",
-        "purpose": "Black circle swallows the screen; closing copy written into the dark."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "prefers-reduced-motion: reduce",
-        "purpose": "Gates every animation above; still canvas frame, needle set directly, numbers render final."
+        "name": "eye-pulse",
+        "value": "2.4s ease-in-out infinite",
+        "purpose": "Vac's amber eye."
       }
     ],
     "breakpoints": [
@@ -354,16 +511,8 @@
         "value": "640px"
       },
       {
-        "name": "canvas-density",
-        "value": "700px"
-      },
-      {
         "name": "md",
         "value": "768px"
-      },
-      {
-        "name": "orbit-pin",
-        "value": "900px"
       },
       {
         "name": "lg",
@@ -373,138 +522,126 @@
   },
   "components": [
     {
-      "name": "Ring Button (primary)",
+      "name": "Yellow Brick Button",
       "kind": "button",
-      "refersTo": "button-ring",
-      "description": "BUY $VOID and the single primary action per view. Amber pill with a ring glow.",
-      "html": "<button class=\"ds-btn-ring\">buy $VOID <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></button>",
-      "css": ".ds-btn-ring{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--font-display),'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:1.25rem;padding:14px 32px;background:var(--color-ring,#ffad42);color:var(--color-night,#06080f);border:none;border-radius:999px;cursor:pointer;box-shadow:0 12px 30px -10px rgba(255,173,66,.75);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s cubic-bezier(.16,1,.3,1),background-color .2s}.ds-btn-ring:hover{background:var(--color-ring-hot,#ffe2a6);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(255,173,66,.9)}.ds-btn-ring:active{transform:translateY(1px)}.ds-btn-ring:focus-visible{outline:2px solid var(--color-ring,#ffad42);outline-offset:3px}"
+      "refersTo": "button-brick-yellow",
+      "description": "The primary action (buy $VAC): a yellow studded brick that lifts on hover and drops on press.",
+      "html": "<a class=\"ds-btn-ring\" href=\"#\">buy $VAC <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-ring { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; font-family: var(--font-body); font-weight: 800; letter-spacing: 0.01em; border: 0; border-radius: 10px; white-space: nowrap; cursor: pointer; transition: transform 0.14s cubic-bezier(0.16,1,0.3,1), box-shadow 0.14s cubic-bezier(0.16,1,0.3,1), background-color 0.18s ease, color 0.18s ease; padding: 14px 24px; font-size: 1.05rem; text-decoration: none; background-color: var(--color-ring); color: var(--color-pen); box-shadow: inset 0 -5px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,0.55), 0 8px 16px -6px rgba(6,18,72,0.6); } .ds-btn-ring::before { content: \"\"; position: absolute; left: 14px; right: 14px; top: -6px; height: 7px; background: radial-gradient(circle at 50% 100%, var(--color-ring) 0 5px, transparent 5.5px) 0 0 / 22px 7px repeat-x; pointer-events: none; } .ds-btn-ring:hover { background-color: var(--color-ring-hot); transform: translateY(-2px); } .ds-btn-ring:hover::before { background-image: radial-gradient(circle at 50% 100%, var(--color-ring-hot) 0 5px, transparent 5.5px); } .ds-btn-ring:active { transform: translateY(3px); box-shadow: inset 0 -2px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,0.55), 0 2px 4px rgba(6,18,72,0.5); } .ds-btn-ring:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; }"
     },
     {
-      "name": "Ghost Button (night)",
+      "name": "White Brick Button",
       "kind": "button",
-      "refersTo": "button-ghost",
-      "description": "Secondary actions on night beside the primary: chart, full log, copy CA.",
-      "html": "<button class=\"ds-btn-ghost\">chart</button>",
-      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--font-display),'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1.02rem;padding:10px 20px;background:transparent;color:var(--color-star,#d3dbec);border:1.5px solid var(--color-panel-line,#26324d);border-radius:999px;cursor:pointer;transition:border-color .2s,color .2s}.ds-btn-ghost:hover{border-color:var(--color-ring,#ffad42);color:var(--color-ring-hot,#ffe2a6)}.ds-btn-ghost:focus-visible{outline:2px solid var(--color-ring,#ffad42);outline-offset:3px}"
+      "refersTo": "button-brick-white",
+      "description": "Secondary actions on the plastic: copy, open the log, feed Vac.",
+      "html": "<button class=\"ds-brick-white\" type=\"button\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"14\" height=\"14\" x=\"8\" y=\"8\" rx=\"2\"/><path d=\"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2\"/></svg> open the full log</button>",
+      "css": ".ds-brick-white { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; font-family: var(--font-body); font-weight: 800; letter-spacing: 0.01em; border: 0; border-radius: 10px; white-space: nowrap; cursor: pointer; transition: transform 0.14s cubic-bezier(0.16,1,0.3,1), box-shadow 0.14s cubic-bezier(0.16,1,0.3,1), background-color 0.18s ease, color 0.18s ease; padding: 12px 20px; font-size: 0.95rem; background-color: var(--color-paper); color: var(--color-pen); box-shadow: inset 0 -4px 0 #b9bfd2, inset 0 2px 0 #fff, 0 8px 16px -8px rgba(6,18,72,0.6); } .ds-brick-white::before { content: \"\"; position: absolute; left: 12px; right: 12px; top: -5px; height: 6px; background: radial-gradient(circle at 50% 100%, var(--color-paper) 0 4.5px, transparent 5px) 0 0 / 19px 6px repeat-x; pointer-events: none; } .ds-brick-white:hover { background-color: #fff; transform: translateY(-2px); } .ds-brick-white:hover::before { background-image: radial-gradient(circle at 50% 100%, #fff 0 4.5px, transparent 5px); } .ds-brick-white:active { transform: translateY(3px); } .ds-brick-white:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; }"
     },
     {
-      "name": "Pen Button (paper)",
+      "name": "Dark Brick Button",
       "kind": "button",
-      "refersTo": "button-pen",
-      "description": "Every action that lives on chart paper: open the full log, copy, close.",
-      "html": "<div class=\"ds-pen-stage\"><button class=\"ds-btn-pen\">open the full log</button></div>",
-      "css": ".ds-pen-stage{background:var(--color-paper,#f1ede1);padding:20px}.ds-btn-pen{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--font-display),'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1rem;padding:10px 20px;background:var(--color-paper,#f1ede1);color:var(--color-pen,#1c2a6b);border:1.5px solid color-mix(in oklab,var(--color-pen,#1c2a6b) 60%,transparent);border-radius:999px;cursor:pointer;transition:background-color .2s,color .2s}.ds-btn-pen:hover{background:var(--color-pen,#1c2a6b);color:var(--color-paper,#f1ede1)}.ds-btn-pen:focus-visible{outline:2px solid var(--color-ring,#ffad42);outline-offset:3px}"
+      "refersTo": "button-brick-dark",
+      "description": "Secondary actions on a white parts label: chart, log, copy CA.",
+      "html": "<button class=\"ds-brick-dark\" type=\"button\">chart</button>",
+      "css": ".ds-brick-dark { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; font-family: var(--font-body); font-weight: 800; letter-spacing: 0.01em; border: 0; border-radius: 10px; white-space: nowrap; cursor: pointer; transition: transform 0.14s cubic-bezier(0.16,1,0.3,1), box-shadow 0.14s cubic-bezier(0.16,1,0.3,1), background-color 0.18s ease, color 0.18s ease; padding: 12px 16px; font-size: 0.95rem; background-color: #2a2d36; color: var(--color-paper); box-shadow: inset 0 -4px 0 #15171c, inset 0 2px 0 rgba(255,255,255,0.14), 0 8px 16px -8px rgba(6,18,72,0.6); } .ds-brick-dark::before { content: \"\"; position: absolute; left: 12px; right: 12px; top: -5px; height: 6px; background: radial-gradient(circle at 50% 100%, #2a2d36 0 4.5px, transparent 5px) 0 0 / 19px 6px repeat-x; pointer-events: none; } .ds-brick-dark:hover { background-color: #3a3e4a; transform: translateY(-2px); } .ds-brick-dark:hover::before { background-image: radial-gradient(circle at 50% 100%, #3a3e4a 0 4.5px, transparent 5px); } .ds-brick-dark:active { transform: translateY(3px); } .ds-brick-dark:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; }"
     },
     {
-      "name": "CA Field",
-      "kind": "input",
-      "refersTo": "ca-field",
-      "description": "The contract address as a copyable pill on night, with a paper copy chip.",
-      "html": "<button class=\"ds-ca\"><span class=\"ds-ca-text\"><span class=\"ds-ca-label\">contract address</span><span class=\"ds-ca-addr\">0x6f3c…a91e</span></span><span class=\"ds-ca-chip\">copy</span></button>",
-      "css": ".ds-ca{display:flex;width:100%;max-width:34rem;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 20px;background:color-mix(in oklab,var(--color-panel,#10172a) 80%,transparent);border:1px solid var(--color-panel-line,#26324d);border-radius:999px;text-align:left;cursor:pointer;transition:border-color .2s}.ds-ca:hover{border-color:var(--color-ring,#ffad42)}.ds-ca:focus-visible{outline:2px solid var(--color-ring,#ffad42);outline-offset:3px}.ds-ca-label{display:block;font-family:var(--font-body),'Hanken Grotesk',system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.62rem;color:var(--color-star-dim,#919db8)}.ds-ca-addr{display:block;font-family:var(--font-mono),'JetBrains Mono',monospace;font-size:.84rem;color:var(--color-star,#d3dbec)}.ds-ca-chip{flex-shrink:0;border-radius:999px;background:var(--color-paper,#f1ede1);color:var(--color-pen,#1c2a6b);padding:6px 12px;font-family:var(--font-display),'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:.95rem}"
-    },
-    {
-      "name": "Navigation",
-      "kind": "nav",
-      "refersTo": "icon-button",
-      "description": "Fixed header: mark and name, label-voice section links, round icon buttons.",
-      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-brand\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 48 48\"><ellipse cx=\"24\" cy=\"24\" rx=\"22\" ry=\"5.5\" fill=\"none\" stroke=\"#ffad42\" stroke-width=\"2.4\" opacity=\".55\"/><circle cx=\"24\" cy=\"24\" r=\"12.5\" fill=\"#000\" stroke=\"#ffe2a6\" stroke-width=\"2\"/><path d=\"M2 24c0 3 9.8 5.5 22 5.5S46 27 46 24\" fill=\"none\" stroke=\"#ffad42\" stroke-width=\"2.6\" stroke-linecap=\"round\"/></svg>Void</span><nav class=\"ds-nav-links\"><a href=\"#\">the orbit</a><a href=\"#\">the log</a><a href=\"#\">the watcher</a></nav><button class=\"ds-icon-btn\" aria-label=\"Mute\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z\"/><path d=\"M16 9a5 5 0 0 1 0 6\"/></svg></button></header>",
-      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px;padding:0 40px;background:color-mix(in oklab,var(--color-night,#06080f) 90%,transparent);box-shadow:0 12px 30px -18px rgba(0,0,0,.9)}.ds-nav-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display),'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:1.9rem;line-height:.86;color:var(--color-star,#d3dbec)}.ds-nav-links{display:flex;gap:28px}.ds-nav-links a{font-family:var(--font-body),'Hanken Grotesk',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;color:var(--color-star-dim,#919db8);text-decoration:none;transition:color .2s}.ds-nav-links a:hover{color:var(--color-ring,#ffad42)}.ds-nav-links a:focus-visible,.ds-icon-btn:focus-visible{outline:2px solid var(--color-ring,#ffad42);outline-offset:3px}.ds-icon-btn{display:flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:999px;border:1px solid var(--color-panel-line,#26324d);background:transparent;color:var(--color-star-dim,#919db8);cursor:pointer;transition:color .2s,border-color .2s}.ds-icon-btn:hover{border-color:var(--color-ring,#ffad42);color:var(--color-ring,#ffad42)}"
-    },
-    {
-      "name": "Paper Slip",
+      "name": "Section Well",
       "kind": "card",
-      "refersTo": "paper-slip",
-      "description": "Strip-chart paper with orange ruling, sprocket holes and a deep drop shadow; holds dense readings and the observer's hand.",
-      "html": "<div class=\"ds-slip\"><div class=\"ds-slip-title\">Observer notes</div><div class=\"ds-slip-label\">falls recorded</div><div class=\"ds-slip-reading\">42</div><div class=\"ds-slip-hand\">all in the log below</div></div>",
-      "css": ".ds-slip{position:relative;max-width:17rem;padding:20px 32px;transform:rotate(-2deg);background-color:var(--color-paper,#f1ede1);color:var(--color-pen,#1c2a6b);background-image:linear-gradient(to right,color-mix(in oklab,#e0703f 42%,transparent) 1px,transparent 1px),linear-gradient(to bottom,color-mix(in oklab,#e0703f 42%,transparent) 1px,transparent 1px),linear-gradient(to right,color-mix(in oklab,#e0703f 16%,transparent) 1px,transparent 1px),linear-gradient(to bottom,color-mix(in oklab,#e0703f 16%,transparent) 1px,transparent 1px);background-size:40px 40px,40px 40px,8px 8px,8px 8px;box-shadow:0 30px 60px -30px rgba(0,0,0,.85);-webkit-mask:radial-gradient(circle at 10px 50%,transparent 4px,#000 4.5px) left/20px 24px repeat-y,radial-gradient(circle at 10px 50%,transparent 4px,#000 4.5px) right/20px 24px repeat-y,linear-gradient(#000,#000) center/calc(100% - 40px) 100% no-repeat;mask:radial-gradient(circle at 10px 50%,transparent 4px,#000 4.5px) left/20px 24px repeat-y,radial-gradient(circle at 10px 50%,transparent 4px,#000 4.5px) right/20px 24px repeat-y,linear-gradient(#000,#000) center/calc(100% - 40px) 100% no-repeat}.ds-slip-title{font-family:var(--font-display),'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;line-height:.86;font-size:1.55rem}.ds-slip-label{margin-top:12px;font-family:var(--font-body),'Hanken Grotesk',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.66rem;color:var(--color-pen-soft,#4a5577)}.ds-slip-reading{font-family:var(--font-mono),'JetBrains Mono',monospace;font-size:.98rem;font-variant-numeric:tabular-nums lining-nums}.ds-slip-hand{font-family:var(--font-hand),'Reenie Beanie',cursive;font-size:1.5rem;line-height:1;color:var(--color-marker,#cf3228)}"
+      "refersTo": "well",
+      "description": "One molded well per section, pressed into the tray lip, with a sub-compartment cell inside.",
+      "html": "<div class=\"ds-lip\"><section class=\"ds-well\"><h2 class=\"ds-headline\">The bin log</h2><p class=\"ds-body\">Every bin run leaves a gap in the tray.</p><div class=\"ds-cell\"><span class=\"ds-num\">1,240,000 <span class=\"ds-tick\">$VAC</span></span></div></section></div>",
+      "css": ".ds-lip { background-color: var(--color-panel); background-image: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0) 40%); padding: 12px; } .ds-well { position: relative; background-color: var(--color-night); color: var(--color-star); border-radius: 28px; padding: 64px 32px 40px; box-shadow: 0 -1px 0 rgba(6,18,72,0.45), 0 1.5px 0 rgba(255,255,255,0.28), inset 0 0 0 1px rgba(6,18,72,0.35), inset 0 3px 0 rgba(6,18,72,0.4), inset 0 22px 30px -8px rgba(6,18,72,0.62), inset 0 -16px 26px -12px rgba(120,150,255,0.16); } .ds-headline { margin: 0; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; line-height: 0.9; letter-spacing: -0.02em; font-size: clamp(2.6rem, 5.4vw, 4.8rem); } .ds-body { margin: 20px 0 0; max-width: 56ch; font-size: 1.08rem; line-height: 1.625; color: var(--color-star-dim); } .ds-cell { position: relative; margin-top: 32px; padding: 24px; min-height: 8rem; display: flex; align-items: flex-end; background-color: var(--color-night-2); border-radius: 18px; box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 0 0 1px rgba(6,18,72,0.4), inset 0 2px 0 rgba(6,18,72,0.45), inset 0 14px 20px -6px rgba(6,18,72,0.55), inset 0 -10px 18px -10px rgba(120,150,255,0.14); } .ds-num { font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: 2.2rem; font-variant-numeric: tabular-nums lining-nums; } .ds-tick { font-size: 0.55em; color: var(--color-ring); }"
     },
     {
-      "name": "Log Tags",
+      "name": "Parts Label",
+      "kind": "card",
+      "refersTo": "parts-label",
+      "description": "The white sticker that carries copy to read and copy: the hero label with wordmark, live total and CA field.",
+      "html": "<div class=\"ds-label\"><h1 class=\"ds-box\">The Vacuum</h1><div class=\"ds-total\"><span class=\"ds-total-num\">48,210,331</span> <span class=\"ds-lbl\">$VAC in the bin</span></div><button class=\"ds-ca\" type=\"button\"><span><span class=\"ds-lbl ds-soft\">contract address</span><span class=\"ds-addr\">0x5e1f…c0a7</span></span><span class=\"ds-ca-copy\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"14\" height=\"14\" x=\"8\" y=\"8\" rx=\"2\"/><path d=\"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2\"/></svg> copy</span></button></div>",
+      "css": ".ds-label { position: relative; max-width: 30rem; padding: 32px 36px; background-color: var(--color-paper); color: var(--color-pen); border-radius: 14px; transform: rotate(-1.2deg); box-shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 14px 30px -8px rgba(6,18,72,0.55), 0 3px 6px rgba(6,18,72,0.25); } .ds-box { margin: 0; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; line-height: 0.82; letter-spacing: -0.03em; font-size: clamp(3.4rem, 8vw, 6rem); } .ds-total { margin-top: 20px; } .ds-total-num { font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: 2.6rem; color: var(--color-marker); font-variant-numeric: tabular-nums; } .ds-lbl { font-family: var(--font-body); font-weight: 700; letter-spacing: 0.01em; font-size: 1.05rem; } .ds-soft { display: block; font-size: 0.78rem; color: var(--color-pen-soft); } .ds-ca { margin-top: 24px; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 16px; border: 0; border-radius: 12px; background: var(--color-paper-shade); color: var(--color-pen); text-align: left; cursor: pointer; transition: background-color 0.18s ease; } .ds-ca:hover { background: #d7dcee; } .ds-ca:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; } .ds-addr { display: block; font-family: var(--font-mono); font-size: 0.82rem; } .ds-ca-copy { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 8px; background: var(--color-pen); color: var(--color-paper); font-weight: 700; font-size: 0.8rem; }"
+    },
+    {
+      "name": "Run Tag",
       "kind": "chip",
-      "refersTo": "log-tag-burn",
-      "description": "Drawer entry tags on paper: burn amber, buyback pen, trigger outlined.",
-      "html": "<div class=\"ds-tag-row\"><span class=\"ds-tag ds-tag-burn\">burn</span><span class=\"ds-tag ds-tag-buyback\">buyback</span><span class=\"ds-tag ds-tag-trigger\">trigger</span></div>",
-      "css": ".ds-tag-row{display:flex;gap:8px;background:var(--color-paper,#f1ede1);padding:16px}.ds-tag{border-radius:999px;padding:2px 10px;font-family:var(--font-display),'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:.85rem}.ds-tag-burn{background:var(--color-ring,#ffad42);color:var(--color-night,#06080f)}.ds-tag-buyback{background:var(--color-pen,#1c2a6b);color:var(--color-paper,#f1ede1)}.ds-tag-trigger{border:1px solid color-mix(in oklab,var(--color-pen,#1c2a6b) 40%,transparent);color:var(--color-pen,#1c2a6b)}"
+      "refersTo": "run-tag",
+      "description": "A small tilted parts-label sticker stamped onto an emptied compartment.",
+      "html": "<span class=\"ds-tag\">run 7</span>",
+      "css": ".ds-tag { display: inline-block; padding: 6px 12px; background: var(--color-paper); color: var(--color-pen); border-radius: 14px; font-family: var(--font-body); font-weight: 700; letter-spacing: 0.01em; font-size: 0.85rem; transform: rotate(-4deg); box-shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 14px 30px -8px rgba(6,18,72,0.55), 0 3px 6px rgba(6,18,72,0.25); }"
     },
     {
-      "name": "Accretion Meter",
-      "kind": "custom",
-      "refersTo": "paper-slip",
-      "description": "VU-style dial on a paper slip; ballistic needle reads disk fill against critical mass, red past 85%.",
-      "html": "<figure class=\"ds-meter\"><figcaption class=\"ds-meter-cap\"><span>Accretion disk</span><span class=\"ds-meter-pct\">62%</span></figcaption><svg viewBox=\"0 0 240 150\" width=\"100%\"><rect x=\"6\" y=\"8\" width=\"228\" height=\"138\" rx=\"10\" fill=\"#f8f4ea\" stroke=\"#1c2a6b\" stroke-opacity=\".35\"/><path d=\"M180.7 57.6 A96 96 0 0 1 199.6 78.3\" fill=\"none\" stroke=\"#cf3228\" stroke-width=\"7\"/><text x=\"120\" y=\"112\" text-anchor=\"middle\" font-family=\"Big Shoulders Display\" font-weight=\"800\" font-size=\"15\" letter-spacing=\"2\" fill=\"#4a5577\">MASS</text><g class=\"ds-needle\"><line x1=\"120\" y1=\"132\" x2=\"120\" y2=\"40\" stroke=\"#06080f\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></g><circle cx=\"120\" cy=\"132\" r=\"7\" fill=\"#06080f\"/></svg><p class=\"ds-meter-hand\">disk is building</p></figure>",
-      "css": ".ds-meter{margin:0;max-width:17.5rem;padding:20px 32px;background:var(--color-paper,#f1ede1);color:var(--color-pen,#1c2a6b);box-shadow:0 30px 60px -30px rgba(0,0,0,.85);transform:rotate(1.5deg)}.ds-meter-cap{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--font-display),'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;font-size:1.55rem;line-height:.86}.ds-meter-pct{font-family:var(--font-mono),'JetBrains Mono',monospace;font-weight:400;font-size:.8rem;color:var(--color-pen-soft,#4a5577)}.ds-needle{transform-origin:120px 132px;transform:rotate(13deg);transition:transform 1.6s cubic-bezier(.34,1.56,.64,1)}.ds-meter:hover .ds-needle{transform:rotate(40deg)}.ds-meter-hand{margin:12px 0 0;font-family:var(--font-hand),'Reenie Beanie',cursive;font-size:1.6rem;line-height:1;color:var(--color-marker,#cf3228)}"
+      "name": "Top Navigation",
+      "kind": "nav",
+      "description": "Fixed bar: Vac mark and wordmark, lowercase section links, buy brick; gains tray-lip plastic on scroll.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><svg width=\"32\" height=\"32\" viewBox=\"-6 -6 112 112\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"#1b1e25\"/><circle cx=\"50\" cy=\"50\" r=\"44.5\" fill=\"#262a33\"/><circle cx=\"50\" cy=\"54\" r=\"31\" fill=\"#353a46\"/><rect x=\"41\" y=\"12\" width=\"18\" height=\"6\" rx=\"3\" fill=\"#0f1116\"/><rect x=\"44\" y=\"13.5\" width=\"12\" height=\"3\" rx=\"1.5\" fill=\"#ffb020\"/></svg><span>The Vacuum</span></a><nav class=\"ds-links\"><a href=\"#\">how it runs</a><a href=\"#\">the bin</a><a href=\"#\">vac</a></nav><a class=\"ds-nav-buy\" href=\"#\">buy $VAC</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 72px; padding: 0 24px; background: rgba(37,82,216,0.95); box-shadow: 0 10px 24px -14px rgba(6,18,72,0.8); color: var(--color-star); } .ds-brand { display: flex; align-items: center; gap: 10px; color: var(--color-star); text-decoration: none; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: 1.7rem; letter-spacing: -0.01em; line-height: 0.9; } .ds-brand svg { transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-brand:hover svg { transform: rotate(200deg); } .ds-links { display: flex; gap: 28px; font-weight: 600; font-size: 0.98rem; } .ds-links a { color: var(--color-star); text-decoration: none; transition: color 0.18s ease; } .ds-links a:hover { color: var(--color-ring); } .ds-links a:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; } .ds-nav-buy { position: relative; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: 10px; font-weight: 800; font-size: 0.92rem; text-decoration: none; background: var(--color-ring); color: var(--color-pen); box-shadow: inset 0 -5px 0 #c98a00, inset 0 2px 0 rgba(255,255,255,0.55), 0 8px 16px -6px rgba(6,18,72,0.6); transition: transform 0.14s cubic-bezier(0.16,1,0.3,1), background-color 0.18s ease; } .ds-nav-buy:hover { background: var(--color-ring-hot); transform: translateY(-2px); } .ds-nav-buy:focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; }"
     }
   ],
   "narrative": {
-    "northStar": "The Night Shift on dEaD-1",
-    "overview": "**Creative North Star: \"The Night Shift on dEaD-1\"**\n\nThe whole system is a radio observatory's control room at night, watching one black hole. Two materials carry everything: the blue-black night of the room and the sky, and pale strip-chart paper ruled in recorder orange that the instruments print onto. Readings are set in a condensed instrument face and in mono; the observer's notes are scrawled over the paper in a red marker hand. The only warm light in the room is the hole's amber photon ring, and it glows brighter as the accretion disk fills.\n\nDensity is split on purpose. Data sits in tight bands on paper slips and the observing-log strip; around them the night sky is left empty. Paper slips are physical objects: they sit slightly rotated (between -2deg and 1.5deg), carry sprocket holes down both edges, and throw a deep soft shadow onto the night. Motion follows instrument physics: needles swing ballistically, the recorder pen draws as you scroll, digits re-ink when a live value changes. Every motion has a still, complete reduced-motion fallback.\n\nThis world rejects the generic dark crypto hero (counter, CA box, stat cards) and the generic space-neon template. The black hole is drawn live on canvas, never shown as a stock nebula or glow blob.",
+    "northStar": "The Sorting Tray",
+    "overview": "The page is a cobalt plastic brick-sorting tray seen from directly above. Every section is a molded well pressed into the tray, and the bright tray lip shows between wells as a thin ridge. Studded bricks in primary red, yellow, green, white and black lie scattered on the well floors, drawn top-down as exact geometry. Copy that matters never sits loose on the plastic: it goes on white parts-label stickers, slightly tilted, pressed on by hand. Vac, a charcoal disc with one amber eye, is the only character, and it works the tray: it sweeps the hero, runs the pinned sequence, and in the finale pulls every brick into the bin.\n\nThe world is toy-sized, deadpan and a little menacing. Material is literal: wells have a dark crease at the top edge and inner shade falling down the wall; bricks have a darker underside edge and round studs; stickers cast a soft drop shadow onto the plastic. Density is low, one idea per well, with big heavy condensed display type, plain sans body, and mono for every number and address.\n\nThe world rejects the dark crypto hero with counter, CA box and stat cards, and it rejects a literal living-room cartoon. The bricks are generic studded bricks, never a branded toy's name, logo, minifigure or trade dress.",
     "keyCharacteristics": [
-      "Blue-black night field with pale, orange-ruled strip-chart paper as the only light surface.",
-      "Four voices: condensed uppercase display, plain grotesk text, tabular mono readings, red marker hand.",
-      "Amber ring light means live or actionable; red marker means the observer's annotation; teal means observatory fuel.",
-      "Paper slips sit slightly rotated, with sprocket holes and a deep drop shadow.",
-      "Scroll-driven instrument motion (pinned orbit, recorder trace, ballistic needle), always gated by prefers-reduced-motion."
+      "Cobalt molded plastic as the only ground: wells on a lit lip, no flat page background.",
+      "Primary-color studded bricks drawn top-down; the yellow brick is the action and the live reading.",
+      "White parts-label stickers carry the copy that must be read, tilted a degree or two.",
+      "Vac (charcoal, one amber eye) is the sole character and the motion engine.",
+      "Piggy-bank pink appears only for keep runs.",
+      "Heavy condensed grotesque display, plain sans body, mono numerals."
     ],
     "rules": [
       {
-        "name": "The Photon Ring Rule",
-        "body": "Amber is the hole's light: live readings, the primary action, and interactive response. It is never body copy, never a static fill on paper, never decoration.",
+        "name": "The Pink Is Only For Keeps Rule",
+        "body": "Piggy-bank pink marks keep runs and nothing else. It never decorates, never marks a bin run, never becomes a second accent.",
         "section": "colors"
       },
       {
-        "name": "The Three Inks Rule",
-        "body": "Each signal ink has one meaning: amber is live, red is the observer's hand, teal is fuel. A burn reads amber on night and marker red on paper (amber does not hold on cream); fuel reads fuel on night and fuel-ink on paper.",
+        "name": "The Yellow Is The Brick You Press Rule",
+        "body": "Yellow on plastic means either \"press this\" or \"this is live\". A static decoration is never yellow.",
         "section": "colors"
       },
       {
-        "name": "The Ruling Is Not Ink Rule",
-        "body": "Recorder orange exists only as the paper's grid. It is the measuring surface, not an accent.",
+        "name": "The Red Writes On Paper Rule",
+        "body": "Marker red is for numbers and states written on white labels and bricks; on cobalt plastic, live values are yellow.",
         "section": "colors"
       },
       {
-        "name": "The Four Voices Rule",
-        "body": "Every string belongs to exactly one voice: display for names and headings, grotesk for explanation, mono for readings, hand for the observer. Never set a reading in the grotesk or an explanation in the hand.",
+        "name": "The Box Lettering Rule",
+        "body": "Display type is always Bricolage 800 at 75% width with negative tracking; never set it at normal width or a lighter weight.",
         "section": "typography"
       },
       {
-        "name": "The Tabular Readings Rule",
-        "body": "Every live number uses tabular lining numerals so digits hold still while they change.",
+        "name": "The Lowercase Labels Rule",
+        "body": "Labels and button copy are lowercase sentence fragments (\"buy $VAC\", \"feed vac a brick\", \"open the full log\"). No uppercase tracking, no eyebrow above a headline.",
         "section": "typography"
       },
       {
-        "name": "The Empty Sky Rule",
-        "body": "Dense data lives on paper; the night around it stays empty. Do not fill the sky between slips with stat tiles or decoration.",
-        "section": "layout"
-      },
-      {
-        "name": "The Paper Floats Rule",
-        "body": "Only paper casts a shadow. Night surfaces never do; they are divided by a 1px to 1.5px panel-line hairline.",
+        "name": "The Pressed In Or Lying On Rule",
+        "body": "Every surface is either molded into the tray (inset shade) or resting on it (navy drop shadow). Nothing floats with a generic card shadow.",
         "section": "elevation"
       },
       {
-        "name": "The Light Is Emitted Rule",
-        "body": "Amber never casts a dark shadow; it glows.",
+        "name": "The Navy Shadow Rule",
+        "body": "Shadows are tinted rgba(6,18,72,...). Black shadows break the plastic.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do put every dense reading on chart paper (paper, pen text, 42%/16% orange ruling at 40px/8px) and leave the night around it empty.",
-      "Do reserve Photon Ring Amber (#ffad42) for live state, the primary action and interactive response.",
-      "Do write the observer's annotations in the marker hand (Reenie Beanie, 1.5rem to 2rem, marker red), with drawn arrows where they point at something.",
-      "Do show the keep orbit openly in fuel teal (fuel on night, fuel-ink on paper).",
-      "Do set every live number in tabular lining numerals, in mono for readings and in the display face for headline totals.",
-      "Do gate every animation behind prefers-reduced-motion and give it a still, complete fallback.",
-      "Do use pill controls (999px) and nearly square paper (4px to 10px)."
+      "Do put every section in a well on the tray lip, with the 8px/12px lip showing between wells.",
+      "Do make the primary action a yellow studded brick with a shaded underside that lifts on hover and drops on press.",
+      "Do put copy that must be read or copied on a white parts-label sticker, tilted no more than a few degrees.",
+      "Do set numbers, addresses, hashes and times in JetBrains Mono with tabular figures.",
+      "Do tint every shadow navy (rgba(6,18,72,...)).",
+      "Do gate pinned, scrubbed and looping motion behind prefers-reduced-motion with a static fallback.",
+      "Do draw bricks top-down with exact studs, in the six brick colors only."
     ],
     "donts": [
-      "Don't build the dark crypto hero: a big counter, a CA box and a row of stat cards.",
-      "Don't use generic space-neon: stock nebulae, purple-cyan gradients, glowing grids on black.",
-      "Don't use recorder orange as an accent or text; it is only the paper's ruling.",
-      "Don't put amber text or fills on paper; a burn on paper reads in marker red.",
-      "Don't give night surfaces drop shadows; only paper floats.",
-      "Don't use the legacy alias tokens or helpers (soot, ember, plaque, btn-coal, sign-lettering and the rest) on public surfaces; they exist only for /memex."
+      "Don't use piggy-bank pink for anything but keep runs.",
+      "Don't use the LEGO name, logo, minifigure shape or trade dress; bricks are generic.",
+      "Don't build the dark crypto hero with counter, CA box and stat cards, and don't draw a literal living-room cartoon.",
+      "Don't give Vac's amber eye color to anything but Vac.",
+      "Don't use black or grey shadows, or generic floating card shadows.",
+      "Don't set display type at normal width or below weight 800.",
+      "Don't put uppercase tracked eyebrows or kickers above headlines."
     ]
   }
 }
